@@ -39,17 +39,17 @@
     },
     {
       "model": "hist_gradient_boosting_lags",
-      "mean_rmse": 935.4031388930925,
-      "std_rmse": 497.0915069316782,
-      "mean_mae": 125.04632356914742,
-      "mean_r_squared": 0.787516006959875
+      "mean_rmse": 908.7678501044717,
+      "std_rmse": 483.682237654663,
+      "mean_mae": 125.25657128676572,
+      "mean_r_squared": 0.7998476071330488
     },
     {
       "model": "ridge_country_lags",
-      "mean_rmse": 22177568938844.574,
-      "std_rmse": 38412675098825.97,
-      "mean_mae": 663354371151.7607,
-      "mean_r_squared": -2.9341939203239553e+20
+      "mean_rmse": 22190367281232.23,
+      "std_rmse": 38434842478420.125,
+      "mean_mae": 663709794902.9479,
+      "mean_r_squared": -2.937581456188876e+20
     }
   ],
   "selected_model": "rolling_7_baseline",

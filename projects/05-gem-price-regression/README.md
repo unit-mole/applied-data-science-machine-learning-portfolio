@@ -8,7 +8,7 @@
 
 **Business question.** Compare interpretable and nonlinear price models, diagnose residual risk, and quantify empirical prediction coverage.  
 **Dataset.** 26,967 cubic-zirconia records with physical measurements, quality grades, and price.  
-**Verified result.** Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 562, and 90.7% coverage for the training-calibrated 90% diagnostic interval.  
+**Verified result.** Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 563, and 90.6% coverage for the training-calibrated 90% diagnostic interval.  
 **Decision value.** Estimate price ranges and identify where prediction errors become operationally material.  
 **Primary limitation.** See limitations below.
 
@@ -58,13 +58,13 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ## Verified result
 
-> Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 562, and 90.7% coverage for the training-calibrated 90% diagnostic interval.
+> Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 563, and 90.6% coverage for the training-calibrated 90% diagnostic interval.
 
 ### Primary comparison table
 
 | model | cv_rmse_mean | cv_rmse_std | cv_mae_mean | cv_r_squared_mean |
 |---|---|---|---|---|
-| hist_gradient_boosting | 574.150 | 32.578 | 299.893 | 0.979 |
+| hist_gradient_boosting | 573.321 | 30.095 | 299.783 | 0.979 |
 | random_forest | 594.728 | 27.049 | 298.884 | 0.978 |
 | log_target_ridge | 921.811 | 81.047 | 443.555 | 0.947 |
 | linear_regression | 1128.547 | 31.882 | 742.037 | 0.921 |
@@ -85,7 +85,7 @@ All values above are generated from the committed data and synchronized with `re
 
 | Priority | Recommendation | Evidence | Expected benefit | Risk or limitation | How to measure success |
 |---:|---|---|---|---|---|
-| 1 | Use the verified result to prioritize a controlled analytical follow-up. | Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 562, and 90.7% coverage for the training-calibrated 90% diagnostic interval. | Better evidence for the stated decision | Observational or historical data may not generalize | Re-run on current data with a prespecified metric |
+| 1 | Use the verified result to prioritize a controlled analytical follow-up. | Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 563, and 90.6% coverage for the training-calibrated 90% diagnostic interval. | Better evidence for the stated decision | Observational or historical data may not generalize | Re-run on current data with a prespecified metric |
 | 2 | Review the largest error, uncertainty, or sensitivity segment before deployment. | See saved diagnostic tables | Reduces hidden failure risk | Small subgroups can produce unstable estimates | Track subgroup error and interval coverage |
 | 3 | Keep a transparent baseline in future monitoring. | Baseline comparison is recorded in the notebook | Detects when complexity stops adding value | Baselines do not capture every business driver | Compare every refresh against the same baseline |
 
@@ -137,5 +137,5 @@ Acquire current, licensed, externally representative data; pre-register the prim
 ## Résumé bullets
 
 - Re-engineered a retail pricing and appraisal analytics analysis into a reproducible supervised regression workflow with automated data-quality evidence, saved outputs, and a fully executed recruiter-facing notebook.
-- Implemented leakage-safe imputation/encoding and problem-appropriate validation to produce the verified result: Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 562, and 90.7% coverage for the training-calibrated 90% diagnostic interval.
+- Implemented leakage-safe imputation/encoding and problem-appropriate validation to produce the verified result: Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 563, and 90.6% coverage for the training-calibrated 90% diagnostic interval.
 - Translated model/statistical diagnostics into prioritized recommendations while documenting provenance, uncertainty, and responsible-use limits.

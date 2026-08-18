@@ -38,10 +38,10 @@
     },
     {
       "model": "random_forest",
-      "cv_pr_auc_mean": 0.6992603645983386,
-      "cv_pr_auc_std": 0.042513761052422196,
-      "cv_roc_auc_mean": 0.7275925828193202,
-      "cv_balanced_accuracy_mean": 0.6764585875911205
+      "cv_pr_auc_mean": 0.6987918238388096,
+      "cv_pr_auc_std": 0.04229359893133851,
+      "cv_roc_auc_mean": 0.7286960011434729,
+      "cv_balanced_accuracy_mean": 0.6728526349352949
     },
     {
       "model": "decision_tree",

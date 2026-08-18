@@ -1,309 +1,309 @@
 {
   "status": "passed",
-  "executed_at_utc": "2026-08-18T17:16:41+00:00",
-  "python": "3.12.13",
-  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "executed_at_utc": "2026-08-18T17:35:39+00:00",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
   "packages": {
-    "numpy": "2.3.5",
-    "pandas": "2.2.3",
-    "scipy": "1.17.0",
-    "scikit-learn": "1.8.0",
-    "matplotlib": "3.10.8",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.1",
     "openpyxl": "3.1.5"
   },
   "project_count": 13,
-  "total_duration_seconds": 208.738,
+  "total_duration_seconds": 86.004,
   "projects": [
     {
       "project": "01-statistical-methods",
       "status": "passed",
-      "duration_seconds": 1.931,
+      "duration_seconds": 1.618,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 9,
-      "notebook": "projects/01-statistical-methods/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/01-statistical-methods/reports/metrics.json",
-      "metrics_sha256": "1766e2306c23def18d1845bb840853d1bfed408484a68d4e0a08860d9e3f19c0",
+      "notebook": "projects\\01-statistical-methods\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\01-statistical-methods\\reports\\metrics.json",
+      "metrics_sha256": "efcd95c7121def8cc8156b555e532c3c12fe87c37b5764a1215a6b8856bb0581",
       "figures": [
-        "projects/01-statistical-methods/reports/figures/statistical_decision_evidence.png",
-        "projects/01-statistical-methods/reports/figures/statistical_evidence.png"
+        "projects\\01-statistical-methods\\reports\\figures\\statistical_decision_evidence.png",
+        "projects\\01-statistical-methods\\reports\\figures\\statistical_evidence.png"
       ],
       "tables": [
-        "projects/01-statistical-methods/reports/tables/shingles_data_quality.csv",
-        "projects/01-statistical-methods/reports/tables/survey_data_quality.csv",
-        "projects/01-statistical-methods/reports/tables/survey_gender_major_contingency.csv",
-        "projects/01-statistical-methods/reports/tables/wholesale_channel_summary.csv",
-        "projects/01-statistical-methods/reports/tables/wholesale_channel_tests.csv",
-        "projects/01-statistical-methods/reports/tables/wholesale_data_quality.csv",
-        "projects/01-statistical-methods/reports/tables/wholesale_region_summary.csv"
+        "projects\\01-statistical-methods\\reports\\tables\\shingles_data_quality.csv",
+        "projects\\01-statistical-methods\\reports\\tables\\survey_data_quality.csv",
+        "projects\\01-statistical-methods\\reports\\tables\\survey_gender_major_contingency.csv",
+        "projects\\01-statistical-methods\\reports\\tables\\wholesale_channel_summary.csv",
+        "projects\\01-statistical-methods\\reports\\tables\\wholesale_channel_tests.csv",
+        "projects\\01-statistical-methods\\reports\\tables\\wholesale_data_quality.csv",
+        "projects\\01-statistical-methods\\reports\\tables\\wholesale_region_summary.csv"
       ]
     },
     {
       "project": "02-uber-drive-analysis",
       "status": "passed",
-      "duration_seconds": 0.689,
+      "duration_seconds": 0.424,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 9,
-      "notebook": "projects/02-uber-drive-analysis/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/02-uber-drive-analysis/reports/metrics.json",
-      "metrics_sha256": "70aee8520468edc1cf5138ec0c76726b344fccd9df1722f6a1514b6f2ebe2841",
+      "notebook": "projects\\02-uber-drive-analysis\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\02-uber-drive-analysis\\reports\\metrics.json",
+      "metrics_sha256": "0f2c6d5c0518168013189ed4d2f08ba6228356c01dc23fd01b96b597563974c7",
       "figures": [
-        "projects/02-uber-drive-analysis/reports/figures/miles_by_category.png",
-        "projects/02-uber-drive-analysis/reports/figures/uber_trip_behavior_evidence.png"
+        "projects\\02-uber-drive-analysis\\reports\\figures\\miles_by_category.png",
+        "projects\\02-uber-drive-analysis\\reports\\figures\\uber_trip_behavior_evidence.png"
       ],
       "tables": [
-        "projects/02-uber-drive-analysis/reports/tables/data_quality.csv",
-        "projects/02-uber-drive-analysis/reports/tables/distance_outliers.csv",
-        "projects/02-uber-drive-analysis/reports/tables/monthly_trip_summary.csv",
-        "projects/02-uber-drive-analysis/reports/tables/purpose_summary.csv",
-        "projects/02-uber-drive-analysis/reports/tables/top_routes.csv",
-        "projects/02-uber-drive-analysis/reports/tables/weekday_summary.csv"
+        "projects\\02-uber-drive-analysis\\reports\\tables\\data_quality.csv",
+        "projects\\02-uber-drive-analysis\\reports\\tables\\distance_outliers.csv",
+        "projects\\02-uber-drive-analysis\\reports\\tables\\monthly_trip_summary.csv",
+        "projects\\02-uber-drive-analysis\\reports\\tables\\purpose_summary.csv",
+        "projects\\02-uber-drive-analysis\\reports\\tables\\top_routes.csv",
+        "projects\\02-uber-drive-analysis\\reports\\tables\\weekday_summary.csv"
       ]
     },
     {
       "project": "03-anova-pca-analysis",
       "status": "passed",
-      "duration_seconds": 0.578,
+      "duration_seconds": 0.434,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 9,
-      "notebook": "projects/03-anova-pca-analysis/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/03-anova-pca-analysis/reports/metrics.json",
-      "metrics_sha256": "9410e53e63947f14193bda84b098f4cc2660b8d96f81e775cf637e59496fe141",
+      "notebook": "projects\\03-anova-pca-analysis\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\03-anova-pca-analysis\\reports\\metrics.json",
+      "metrics_sha256": "df4ee0444bd496c2b458931b0fc52aa783a030e374beda045951a834f9b14a10",
       "figures": [
-        "projects/03-anova-pca-analysis/reports/figures/anova_pca_evidence.png",
-        "projects/03-anova-pca-analysis/reports/figures/pca_explained_variance.png"
+        "projects\\03-anova-pca-analysis\\reports\\figures\\anova_pca_evidence.png",
+        "projects\\03-anova-pca-analysis\\reports\\figures\\pca_explained_variance.png"
       ],
       "tables": [
-        "projects/03-anova-pca-analysis/reports/tables/college_component_scores.csv",
-        "projects/03-anova-pca-analysis/reports/tables/college_data_quality.csv",
-        "projects/03-anova-pca-analysis/reports/tables/pca_loadings.csv",
-        "projects/03-anova-pca-analysis/reports/tables/salary_data_quality.csv",
-        "projects/03-anova-pca-analysis/reports/tables/salary_pairwise_holm.csv"
+        "projects\\03-anova-pca-analysis\\reports\\tables\\college_component_scores.csv",
+        "projects\\03-anova-pca-analysis\\reports\\tables\\college_data_quality.csv",
+        "projects\\03-anova-pca-analysis\\reports\\tables\\pca_loadings.csv",
+        "projects\\03-anova-pca-analysis\\reports\\tables\\salary_data_quality.csv",
+        "projects\\03-anova-pca-analysis\\reports\\tables\\salary_pairwise_holm.csv"
       ]
     },
     {
       "project": "04-insurance-claim-prediction",
       "status": "passed",
-      "duration_seconds": 63.968,
+      "duration_seconds": 17.109,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 10,
-      "notebook": "projects/04-insurance-claim-prediction/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/04-insurance-claim-prediction/reports/metrics.json",
-      "metrics_sha256": "be846eceb9d9382cc75b6e4283ac8ab7388af930c4f63f2ae120be055f47b5fa",
+      "notebook": "projects\\04-insurance-claim-prediction\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\04-insurance-claim-prediction\\reports\\metrics.json",
+      "metrics_sha256": "d15f0ddacdb46bff50ef4e27499faa49427fa91359639377435c22e2364d394b",
       "figures": [
-        "projects/04-insurance-claim-prediction/reports/figures/best_model_confusion_matrix.png",
-        "projects/04-insurance-claim-prediction/reports/figures/insurance_model_evidence.png"
+        "projects\\04-insurance-claim-prediction\\reports\\figures\\best_model_confusion_matrix.png",
+        "projects\\04-insurance-claim-prediction\\reports\\figures\\insurance_model_evidence.png"
       ],
       "tables": [
-        "projects/04-insurance-claim-prediction/reports/tables/data_quality.csv",
-        "projects/04-insurance-claim-prediction/reports/tables/model_comparison.csv",
-        "projects/04-insurance-claim-prediction/reports/tables/permutation_importance.csv",
-        "projects/04-insurance-claim-prediction/reports/tables/threshold_analysis.csv"
+        "projects\\04-insurance-claim-prediction\\reports\\tables\\data_quality.csv",
+        "projects\\04-insurance-claim-prediction\\reports\\tables\\model_comparison.csv",
+        "projects\\04-insurance-claim-prediction\\reports\\tables\\permutation_importance.csv",
+        "projects\\04-insurance-claim-prediction\\reports\\tables\\threshold_analysis.csv"
       ]
     },
     {
       "project": "05-gem-price-regression",
       "status": "passed",
-      "duration_seconds": 10.272,
+      "duration_seconds": 5.253,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 10,
-      "notebook": "projects/05-gem-price-regression/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/05-gem-price-regression/reports/metrics.json",
-      "metrics_sha256": "672b997254d004c17750254025e4626102e8956e738ae34150270ada41357792",
+      "notebook": "projects\\05-gem-price-regression\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\05-gem-price-regression\\reports\\metrics.json",
+      "metrics_sha256": "07f6c6abe8b133cec51d42eb6c0d545d644b005324ce646acd2a2f7a917759d5",
       "figures": [
-        "projects/05-gem-price-regression/reports/figures/gem_price_model_evidence.png",
-        "projects/05-gem-price-regression/reports/figures/test_residuals.png"
+        "projects\\05-gem-price-regression\\reports\\figures\\gem_price_model_evidence.png",
+        "projects\\05-gem-price-regression\\reports\\figures\\test_residuals.png"
       ],
       "tables": [
-        "projects/05-gem-price-regression/reports/tables/data_quality.csv",
-        "projects/05-gem-price-regression/reports/tables/error_by_carat_band.csv",
-        "projects/05-gem-price-regression/reports/tables/model_comparison.csv",
-        "projects/05-gem-price-regression/reports/tables/permutation_importance.csv",
-        "projects/05-gem-price-regression/reports/tables/test_predictions.csv"
+        "projects\\05-gem-price-regression\\reports\\tables\\data_quality.csv",
+        "projects\\05-gem-price-regression\\reports\\tables\\error_by_carat_band.csv",
+        "projects\\05-gem-price-regression\\reports\\tables\\model_comparison.csv",
+        "projects\\05-gem-price-regression\\reports\\tables\\permutation_importance.csv",
+        "projects\\05-gem-price-regression\\reports\\tables\\test_predictions.csv"
       ]
     },
     {
       "project": "06-holiday-package-prediction",
       "status": "passed",
-      "duration_seconds": 3.118,
+      "duration_seconds": 1.192,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 10,
-      "notebook": "projects/06-holiday-package-prediction/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/06-holiday-package-prediction/reports/metrics.json",
-      "metrics_sha256": "2b6bf2f863d3d91c7dddd8a73bf90d7e22253932e6925a25f61a79ebc5dba398",
+      "notebook": "projects\\06-holiday-package-prediction\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\06-holiday-package-prediction\\reports\\metrics.json",
+      "metrics_sha256": "8ab9bc32a0d30529c4611b0f503a5e2befbc3763b2a10e36dc86a18b8570983f",
       "figures": [
-        "projects/06-holiday-package-prediction/reports/figures/holiday_propensity_evidence.png",
-        "projects/06-holiday-package-prediction/reports/figures/logistic_coefficients.png"
+        "projects\\06-holiday-package-prediction\\reports\\figures\\holiday_propensity_evidence.png",
+        "projects\\06-holiday-package-prediction\\reports\\figures\\logistic_coefficients.png"
       ],
       "tables": [
-        "projects/06-holiday-package-prediction/reports/tables/campaign_thresholds.csv",
-        "projects/06-holiday-package-prediction/reports/tables/customer_profile_by_outcome.csv",
-        "projects/06-holiday-package-prediction/reports/tables/data_quality.csv",
-        "projects/06-holiday-package-prediction/reports/tables/model_comparison.csv",
-        "projects/06-holiday-package-prediction/reports/tables/permutation_importance.csv"
+        "projects\\06-holiday-package-prediction\\reports\\tables\\campaign_thresholds.csv",
+        "projects\\06-holiday-package-prediction\\reports\\tables\\customer_profile_by_outcome.csv",
+        "projects\\06-holiday-package-prediction\\reports\\tables\\data_quality.csv",
+        "projects\\06-holiday-package-prediction\\reports\\tables\\model_comparison.csv",
+        "projects\\06-holiday-package-prediction\\reports\\tables\\permutation_importance.csv"
       ]
     },
     {
       "project": "07-election-exit-poll-prediction",
       "status": "passed",
-      "duration_seconds": 46.65,
+      "duration_seconds": 10.115,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 10,
-      "notebook": "projects/07-election-exit-poll-prediction/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/07-election-exit-poll-prediction/reports/metrics.json",
-      "metrics_sha256": "7b2145184ea2bc420a56ffdcaa916c607f68810b1b9baf96aa645afa2a9a4f18",
+      "notebook": "projects\\07-election-exit-poll-prediction\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\07-election-exit-poll-prediction\\reports\\metrics.json",
+      "metrics_sha256": "72725ae897d25bdf1a2ec9bab1bc09caf780160c6174e435d54d57789f6f181c",
       "figures": [
-        "projects/07-election-exit-poll-prediction/reports/figures/election_model_evidence.png",
-        "projects/07-election-exit-poll-prediction/reports/figures/model_comparison.png"
+        "projects\\07-election-exit-poll-prediction\\reports\\figures\\election_model_evidence.png",
+        "projects\\07-election-exit-poll-prediction\\reports\\figures\\model_comparison.png"
       ],
       "tables": [
-        "projects/07-election-exit-poll-prediction/reports/tables/data_quality.csv",
-        "projects/07-election-exit-poll-prediction/reports/tables/model_comparison.csv",
-        "projects/07-election-exit-poll-prediction/reports/tables/permutation_importance.csv",
-        "projects/07-election-exit-poll-prediction/reports/tables/subgroup_sensitivity.csv"
+        "projects\\07-election-exit-poll-prediction\\reports\\tables\\data_quality.csv",
+        "projects\\07-election-exit-poll-prediction\\reports\\tables\\model_comparison.csv",
+        "projects\\07-election-exit-poll-prediction\\reports\\tables\\permutation_importance.csv",
+        "projects\\07-election-exit-poll-prediction\\reports\\tables\\subgroup_sensitivity.csv"
       ]
     },
     {
       "project": "08-presidential-speech-analysis",
       "status": "passed",
-      "duration_seconds": 0.811,
+      "duration_seconds": 0.524,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 9,
-      "notebook": "projects/08-presidential-speech-analysis/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/08-presidential-speech-analysis/reports/metrics.json",
-      "metrics_sha256": "d6536f13a74b52b5457eb98d7629f55119152c205d437e4ad71df71fcf2adb58",
+      "notebook": "projects\\08-presidential-speech-analysis\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\08-presidential-speech-analysis\\reports\\metrics.json",
+      "metrics_sha256": "e2c7afc197b7718117f590917418cdc94f591311d3ebe6a4fe3c635b921dd066",
       "figures": [
-        "projects/08-presidential-speech-analysis/reports/figures/speech_analysis_evidence.png",
-        "projects/08-presidential-speech-analysis/reports/figures/top_words_by_speech.png"
+        "projects\\08-presidential-speech-analysis\\reports\\figures\\speech_analysis_evidence.png",
+        "projects\\08-presidential-speech-analysis\\reports\\figures\\top_words_by_speech.png"
       ],
       "tables": [
-        "projects/08-presidential-speech-analysis/reports/tables/corpus_metrics.csv",
-        "projects/08-presidential-speech-analysis/reports/tables/data_quality.csv",
-        "projects/08-presidential-speech-analysis/reports/tables/distinctive_tfidf_terms.csv",
-        "projects/08-presidential-speech-analysis/reports/tables/exploratory_topics.csv",
-        "projects/08-presidential-speech-analysis/reports/tables/tfidf_similarity.csv",
-        "projects/08-presidential-speech-analysis/reports/tables/topic_share_by_speech.csv"
+        "projects\\08-presidential-speech-analysis\\reports\\tables\\corpus_metrics.csv",
+        "projects\\08-presidential-speech-analysis\\reports\\tables\\data_quality.csv",
+        "projects\\08-presidential-speech-analysis\\reports\\tables\\distinctive_tfidf_terms.csv",
+        "projects\\08-presidential-speech-analysis\\reports\\tables\\exploratory_topics.csv",
+        "projects\\08-presidential-speech-analysis\\reports\\tables\\tfidf_similarity.csv",
+        "projects\\08-presidential-speech-analysis\\reports\\tables\\topic_share_by_speech.csv"
       ]
     },
     {
       "project": "09-wine-sales-forecasting",
       "status": "passed",
-      "duration_seconds": 0.676,
+      "duration_seconds": 0.437,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 10,
-      "notebook": "projects/09-wine-sales-forecasting/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/09-wine-sales-forecasting/reports/metrics.json",
-      "metrics_sha256": "f72749eda60b0a8afb5a91452df0051243c3bf8427d4254d4b1b870fc30c40e7",
+      "notebook": "projects\\09-wine-sales-forecasting\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\09-wine-sales-forecasting\\reports\\metrics.json",
+      "metrics_sha256": "889cd496fc05ffce9b7eb2951d4d6bdefbd5d401706a1ce78fe8c6ffb70afebd",
       "figures": [
-        "projects/09-wine-sales-forecasting/reports/figures/chronological_holdout_forecasts.png",
-        "projects/09-wine-sales-forecasting/reports/figures/wine_forecasting_evidence.png"
+        "projects\\09-wine-sales-forecasting\\reports\\figures\\chronological_holdout_forecasts.png",
+        "projects\\09-wine-sales-forecasting\\reports\\figures\\wine_forecasting_evidence.png"
       ],
       "tables": [
-        "projects/09-wine-sales-forecasting/reports/tables/rolling_origin_results.csv",
-        "projects/09-wine-sales-forecasting/reports/tables/rose_data_quality.csv",
-        "projects/09-wine-sales-forecasting/reports/tables/rose_final_holdout.csv",
-        "projects/09-wine-sales-forecasting/reports/tables/rose_model_comparison.csv",
-        "projects/09-wine-sales-forecasting/reports/tables/sparkling_data_quality.csv",
-        "projects/09-wine-sales-forecasting/reports/tables/sparkling_final_holdout.csv",
-        "projects/09-wine-sales-forecasting/reports/tables/sparkling_model_comparison.csv"
+        "projects\\09-wine-sales-forecasting\\reports\\tables\\rolling_origin_results.csv",
+        "projects\\09-wine-sales-forecasting\\reports\\tables\\rose_data_quality.csv",
+        "projects\\09-wine-sales-forecasting\\reports\\tables\\rose_final_holdout.csv",
+        "projects\\09-wine-sales-forecasting\\reports\\tables\\rose_model_comparison.csv",
+        "projects\\09-wine-sales-forecasting\\reports\\tables\\sparkling_data_quality.csv",
+        "projects\\09-wine-sales-forecasting\\reports\\tables\\sparkling_final_holdout.csv",
+        "projects\\09-wine-sales-forecasting\\reports\\tables\\sparkling_model_comparison.csv"
       ]
     },
     {
       "project": "10-marketing-retail-analysis",
       "status": "passed",
-      "duration_seconds": 11.137,
+      "duration_seconds": 8.951,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 9,
-      "notebook": "projects/10-marketing-retail-analysis/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/10-marketing-retail-analysis/reports/metrics.json",
-      "metrics_sha256": "9a7f9ed547424e36fe2765b626f44067293bdbbfbc96167e5510e39f86fe965c",
+      "notebook": "projects\\10-marketing-retail-analysis\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\10-marketing-retail-analysis\\reports\\metrics.json",
+      "metrics_sha256": "682a8022b5be70b0c18c93892bf111595f6a324e0585845bd4de6cb7e56400b8",
       "figures": [
-        "projects/10-marketing-retail-analysis/reports/figures/cafe_business_evidence.png",
-        "projects/10-marketing-retail-analysis/reports/figures/top_categories_by_revenue.png"
+        "projects\\10-marketing-retail-analysis\\reports\\figures\\cafe_business_evidence.png",
+        "projects\\10-marketing-retail-analysis\\reports\\figures\\top_categories_by_revenue.png"
       ],
       "tables": [
-        "projects/10-marketing-retail-analysis/reports/tables/basket_item_pairs.csv",
-        "projects/10-marketing-retail-analysis/reports/tables/category_summary.csv",
-        "projects/10-marketing-retail-analysis/reports/tables/data_quality.csv",
-        "projects/10-marketing-retail-analysis/reports/tables/daypart_summary.csv",
-        "projects/10-marketing-retail-analysis/reports/tables/menu_cluster_profiles.csv",
-        "projects/10-marketing-retail-analysis/reports/tables/menu_cluster_selection.csv",
-        "projects/10-marketing-retail-analysis/reports/tables/menu_item_segments.csv",
-        "projects/10-marketing-retail-analysis/reports/tables/monthly_business_summary.csv"
+        "projects\\10-marketing-retail-analysis\\reports\\tables\\basket_item_pairs.csv",
+        "projects\\10-marketing-retail-analysis\\reports\\tables\\category_summary.csv",
+        "projects\\10-marketing-retail-analysis\\reports\\tables\\data_quality.csv",
+        "projects\\10-marketing-retail-analysis\\reports\\tables\\daypart_summary.csv",
+        "projects\\10-marketing-retail-analysis\\reports\\tables\\menu_cluster_profiles.csv",
+        "projects\\10-marketing-retail-analysis\\reports\\tables\\menu_cluster_selection.csv",
+        "projects\\10-marketing-retail-analysis\\reports\\tables\\menu_item_segments.csv",
+        "projects\\10-marketing-retail-analysis\\reports\\tables\\monthly_business_summary.csv"
       ]
     },
     {
       "project": "11-parkinsons-disease-detection",
       "status": "passed",
-      "duration_seconds": 26.87,
+      "duration_seconds": 12.246,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 10,
-      "notebook": "projects/11-parkinsons-disease-detection/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/11-parkinsons-disease-detection/reports/metrics.json",
-      "metrics_sha256": "050b739ae40860df2ad2fa579f1a05878d225b3f5b93d5c4be98e85f80168a3a",
+      "notebook": "projects\\11-parkinsons-disease-detection\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\11-parkinsons-disease-detection\\reports\\metrics.json",
+      "metrics_sha256": "782a416e321d8ebb4c53d8cba0d237c912c472f2ef23a09981ea5360ee8e9ec1",
       "figures": [
-        "projects/11-parkinsons-disease-detection/reports/figures/participant_confusion_matrix.png",
-        "projects/11-parkinsons-disease-detection/reports/figures/participant_safe_model_evidence.png"
+        "projects\\11-parkinsons-disease-detection\\reports\\figures\\participant_confusion_matrix.png",
+        "projects\\11-parkinsons-disease-detection\\reports\\figures\\participant_safe_model_evidence.png"
       ],
       "tables": [
-        "projects/11-parkinsons-disease-detection/reports/tables/data_quality.csv",
-        "projects/11-parkinsons-disease-detection/reports/tables/held_out_participant_predictions.csv",
-        "projects/11-parkinsons-disease-detection/reports/tables/participant_grouped_cv.csv",
-        "projects/11-parkinsons-disease-detection/reports/tables/permutation_importance.csv"
+        "projects\\11-parkinsons-disease-detection\\reports\\tables\\data_quality.csv",
+        "projects\\11-parkinsons-disease-detection\\reports\\tables\\held_out_participant_predictions.csv",
+        "projects\\11-parkinsons-disease-detection\\reports\\tables\\participant_grouped_cv.csv",
+        "projects\\11-parkinsons-disease-detection\\reports\\tables\\permutation_importance.csv"
       ]
     },
     {
       "project": "12-online-retail-segmentation",
       "status": "passed",
-      "duration_seconds": 39.675,
+      "duration_seconds": 26.164,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 10,
-      "notebook": "projects/12-online-retail-segmentation/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/12-online-retail-segmentation/reports/metrics.json",
-      "metrics_sha256": "f92d38c993f6ebfca1d8b1a936a8ba84ac7d0737741a8fda8434ad753e82f3a7",
+      "notebook": "projects\\12-online-retail-segmentation\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\12-online-retail-segmentation\\reports\\metrics.json",
+      "metrics_sha256": "d2517c21e8042bc8f7722468a4eb94b46aaf69f89821a0b709c61eb084f1a2ad",
       "figures": [
-        "projects/12-online-retail-segmentation/reports/figures/online_retail_segmentation_evidence.png",
-        "projects/12-online-retail-segmentation/reports/figures/rfm_cluster_projection.png"
+        "projects\\12-online-retail-segmentation\\reports\\figures\\online_retail_segmentation_evidence.png",
+        "projects\\12-online-retail-segmentation\\reports\\figures\\rfm_cluster_projection.png"
       ],
       "tables": [
-        "projects/12-online-retail-segmentation/reports/tables/cleaning_funnel.csv",
-        "projects/12-online-retail-segmentation/reports/tables/cluster_model_selection.csv",
-        "projects/12-online-retail-segmentation/reports/tables/customer_segments.csv",
-        "projects/12-online-retail-segmentation/reports/tables/data_quality.csv",
-        "projects/12-online-retail-segmentation/reports/tables/segment_profiles.csv"
+        "projects\\12-online-retail-segmentation\\reports\\tables\\cleaning_funnel.csv",
+        "projects\\12-online-retail-segmentation\\reports\\tables\\cluster_model_selection.csv",
+        "projects\\12-online-retail-segmentation\\reports\\tables\\customer_segments.csv",
+        "projects\\12-online-retail-segmentation\\reports\\tables\\data_quality.csv",
+        "projects\\12-online-retail-segmentation\\reports\\tables\\segment_profiles.csv"
       ]
     },
     {
       "project": "13-covid-outbreak-prediction",
       "status": "passed",
-      "duration_seconds": 2.363,
+      "duration_seconds": 1.537,
       "notebook_cells": 33,
       "code_cells": 10,
       "code_cells_with_outputs": 10,
-      "notebook": "projects/13-covid-outbreak-prediction/notebooks/01_end_to_end_analysis.ipynb",
-      "metrics": "projects/13-covid-outbreak-prediction/reports/metrics.json",
-      "metrics_sha256": "cd03fde5bf932f0513c1b12149ab737ce7b7c2ba6edfe2e59283dfd6eed53a2b",
+      "notebook": "projects\\13-covid-outbreak-prediction\\notebooks\\01_end_to_end_analysis.ipynb",
+      "metrics": "projects\\13-covid-outbreak-prediction\\reports\\metrics.json",
+      "metrics_sha256": "acfd82e9d5049adbe8e9fc1af5a564132634af9af12e9bef3276105bed1b1a9b",
       "figures": [
-        "projects/13-covid-outbreak-prediction/reports/figures/chronological_holdout.png",
-        "projects/13-covid-outbreak-prediction/reports/figures/historical_covid_validation_evidence.png"
+        "projects\\13-covid-outbreak-prediction\\reports\\figures\\chronological_holdout.png",
+        "projects\\13-covid-outbreak-prediction\\reports\\figures\\historical_covid_validation_evidence.png"
       ],
       "tables": [
-        "projects/13-covid-outbreak-prediction/reports/tables/aggregated_test_forecast.csv",
-        "projects/13-covid-outbreak-prediction/reports/tables/data_quality.csv",
-        "projects/13-covid-outbreak-prediction/reports/tables/model_comparison.csv",
-        "projects/13-covid-outbreak-prediction/reports/tables/rolling_origin_results.csv",
-        "projects/13-covid-outbreak-prediction/reports/tables/test_error_by_country.csv"
+        "projects\\13-covid-outbreak-prediction\\reports\\tables\\aggregated_test_forecast.csv",
+        "projects\\13-covid-outbreak-prediction\\reports\\tables\\data_quality.csv",
+        "projects\\13-covid-outbreak-prediction\\reports\\tables\\model_comparison.csv",
+        "projects\\13-covid-outbreak-prediction\\reports\\tables\\rolling_origin_results.csv",
+        "projects\\13-covid-outbreak-prediction\\reports\\tables\\test_error_by_country.csv"
       ]
     }
   ]

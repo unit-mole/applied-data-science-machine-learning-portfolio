@@ -31,8 +31,8 @@
     },
     {
       "model": "random_forest",
-      "participant_cv_roc_auc_mean": 0.58125,
-      "participant_cv_roc_auc_std": 0.41501756990919475,
+      "participant_cv_roc_auc_mean": 0.55,
+      "participant_cv_roc_auc_std": 0.3894440481849307,
       "participant_cv_balanced_accuracy_mean": 0.59375,
       "participant_cv_recall_mean": 0.9375
     },
@@ -60,7 +60,7 @@
     "recall_sensitivity": 1.0,
     "specificity": 0.5,
     "f1": 0.925,
-    "brier_score": 0.09366439064549982,
+    "brier_score": 0.09381678795099402,
     "true_negatives": 6,
     "false_positives": 6,
     "false_negatives": 0,
@@ -74,7 +74,7 @@
     "recall_sensitivity": 1.0,
     "specificity": 0.5,
     "f1": 0.9230769230769231,
-    "brier_score": 0.08970589471880189,
+    "brier_score": 0.08984387303294905,
     "true_negatives": 1,
     "false_positives": 1,
     "false_negatives": 0,
@@ -98,33 +98,33 @@
   "top_permutation_features": [
     {
       "feature": "Jitter:DDP",
-      "importance": 0.0239864864864864,
-      "importance_std": 0.026556289019486267
+      "importance": 0.02488738738738729,
+      "importance_std": 0.027106443007073776
     },
     {
       "feature": "MDVP:RAP",
-      "importance": 0.02173423423423413,
-      "importance_std": 0.025682342662158155
+      "importance": 0.019031531531531448,
+      "importance_std": 0.024707884721384854
     },
     {
       "feature": "spread2",
-      "importance": 0.01768018018018009,
-      "importance_std": 0.014443857176851376
+      "importance": 0.018243243243243158,
+      "importance_std": 0.014887029612306998
     },
     {
       "feature": "PPE",
-      "importance": 0.012837837837837795,
-      "importance_std": 0.04994264627115001
+      "importance": 0.013288288288288241,
+      "importance_std": 0.04990606792380678
     },
     {
       "feature": "DFA",
-      "importance": 0.009346846846846746,
-      "importance_std": 0.005483436407180122
+      "importance": 0.010247747747747653,
+      "importance_std": 0.005060054490689403
     },
     {
       "feature": "MDVP:Fo(Hz)",
-      "importance": 0.003040540540540493,
-      "importance_std": 0.03670048327706416
+      "importance": 0.0036036036036035503,
+      "importance_std": 0.036305300323621406
     },
     {
       "feature": "MDVP:APQ",
@@ -132,9 +132,9 @@
       "importance_std": 0.0018018018018017752
     },
     {
-      "feature": "Shimmer:APQ5",
-      "importance": 0.0,
-      "importance_std": 0.0
+      "feature": "D2",
+      "importance": 0.0002252252252251119,
+      "importance_std": 0.006562523551501559
     },
     {
       "feature": "Shimmer:APQ3",

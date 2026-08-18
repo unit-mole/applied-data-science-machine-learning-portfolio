@@ -60,14 +60,14 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 |---|---|---|
 | Roosevelt 1941 | democracy | 0.099 |
 | Roosevelt 1941 | body | 0.081 |
-| Roosevelt 1941 | speaks | 0.081 |
 | Roosevelt 1941 | mind | 0.081 |
+| Roosevelt 1941 | speaks | 0.081 |
 | Roosevelt 1941 | know | 0.078 |
 | Roosevelt 1941 | spirit | 0.075 |
 | Roosevelt 1941 | years | 0.066 |
-| Roosevelt 1941 | like person | 0.065 |
+| Roosevelt 1941 | nation like | 0.065 |
 | Roosevelt 1941 | spirit faith | 0.065 |
-| Roosevelt 1941 | task | 0.065 |
+| Roosevelt 1941 | came | 0.065 |
 
 All values above are generated from the committed data and synchronized with `reports/metrics.json` after execution.
 

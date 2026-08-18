@@ -113,7 +113,7 @@
         "tfidf": 0.06544562840320618
       },
       {
-        "term": "join",
+        "term": "dare",
         "tfidf": 0.061640776836939866
       },
       {
@@ -121,11 +121,11 @@
         "tfidf": 0.061640776836939866
       },
       {
-        "term": "globe",
+        "term": "control",
         "tfidf": 0.061640776836939866
       },
       {
-        "term": "control",
+        "term": "join",
         "tfidf": 0.061640776836939866
       },
       {
@@ -133,11 +133,11 @@
         "tfidf": 0.061640776836939866
       },
       {
-        "term": "dare",
+        "term": "globe",
         "tfidf": 0.061640776836939866
       },
       {
-        "term": "power",
+        "term": "citizens",
         "tfidf": 0.058290368019827614
       },
       {
@@ -145,11 +145,11 @@
         "tfidf": 0.058290368019827614
       },
       {
-        "term": "ask",
+        "term": "power",
         "tfidf": 0.058290368019827614
       },
       {
-        "term": "citizens",
+        "term": "ask",
         "tfidf": 0.058290368019827614
       },
       {
@@ -171,7 +171,11 @@
         "tfidf": 0.07928845223342657
       },
       {
-        "term": "act",
+        "term": "respect",
+        "tfidf": 0.07023238415552868
+      },
+      {
+        "term": "era",
         "tfidf": 0.07023238415552868
       },
       {
@@ -179,11 +183,7 @@
         "tfidf": 0.07023238415552868
       },
       {
-        "term": "respect",
-        "tfidf": 0.07023238415552868
-      },
-      {
-        "term": "era",
+        "term": "act",
         "tfidf": 0.07023238415552868
       },
       {
@@ -215,7 +215,7 @@
         "tfidf": 0.06184247122055748
       },
       {
-        "term": "years",
+        "term": "role",
         "tfidf": 0.060300911619312114
       }
     ],
@@ -229,11 +229,11 @@
         "tfidf": 0.08085161499324119
       },
       {
-        "term": "speaks",
+        "term": "mind",
         "tfidf": 0.08085161499324119
       },
       {
-        "term": "mind",
+        "term": "speaks",
         "tfidf": 0.08085161499324119
       },
       {
@@ -249,7 +249,7 @@
         "tfidf": 0.06578602818668543
       },
       {
-        "term": "like person",
+        "term": "nation like",
         "tfidf": 0.06502403907560449
       },
       {
@@ -257,19 +257,15 @@
         "tfidf": 0.06502403907560449
       },
       {
-        "term": "task",
+        "term": "came",
         "tfidf": 0.06502403907560449
       },
       {
-        "term": "task people",
+        "term": "like person",
         "tfidf": 0.06502403907560449
       },
       {
-        "term": "day task",
-        "tfidf": 0.06502403907560449
-      },
-      {
-        "term": "sacred",
+        "term": "like",
         "tfidf": 0.06502403907560449
       },
       {
@@ -277,7 +273,11 @@
         "tfidf": 0.06502403907560449
       },
       {
-        "term": "came",
+        "term": "united states",
+        "tfidf": 0.06502403907560449
+      },
+      {
+        "term": "continent",
         "tfidf": 0.06502403907560449
       }
     ]
@@ -289,7 +289,7 @@
     },
     {
       "topic": 2,
-      "top_terms": "nation, body, mind, people, know, live, day, speaks, task, day task"
+      "top_terms": "nation, body, mind, people, know, live, day, speaks, day task, task people"
     },
     {
       "topic": 3,

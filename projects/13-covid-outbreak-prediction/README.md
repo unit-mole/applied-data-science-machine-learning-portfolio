@@ -67,8 +67,8 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 |---|---|---|---|---|
 | rolling_7_baseline | 499.850 | 87.223 | 89.887 | 0.947 |
 | last_value | 570.842 | 177.555 | 88.214 | 0.926 |
-| hist_gradient_boosting_lags | 935.403 | 497.092 | 125.046 | 0.788 |
-| ridge_country_lags | 22177568938844.570 | 38412675098825.969 | 663354371151.761 | -293419392032395558912.000 |
+| hist_gradient_boosting_lags | 908.768 | 483.682 | 125.257 | 0.800 |
+| ridge_country_lags | 22190367281232.230 | 38434842478420.125 | 663709794902.948 | -293758145618887606272.000 |
 
 All values above are generated from the committed data and synchronized with `reports/metrics.json` after execution.
 

@@ -18,7 +18,7 @@
       "welch_anova_p": 2.452030538647869e-10,
       "kruskal_h": 22.798099593495948,
       "kruskal_p": 1.1206127884422072e-05,
-      "levene_p": 0.1668642569930117,
+      "levene_p": 0.16686425699301172,
       "eta_squared": 0.6259322381887624
     },
     "occupation": {
@@ -37,7 +37,7 @@
       "numerator_df": 5,
       "denominator_df": 29
     },
-    "additive_model_residual_shapiro_p": 0.09013339840992227,
+    "additive_model_residual_shapiro_p": 0.09013339851354613,
     "pairwise_tests": [
       {
         "field": "Education",
@@ -127,86 +127,86 @@
     "components_for_80_percent": 6,
     "components_for_90_percent": 9,
     "first_three_explained_variance": [
-      0.3202062819886916,
+      0.3202062819886914,
       0.2634021443611249,
-      0.06900916554222482
+      0.06900916554222478
     ],
-    "reconstruction_rmse_at_80_percent_components": 0.42827731113092665,
+    "reconstruction_rmse_at_80_percent_components": 0.4282773111309267,
     "top_loadings": [
       {
         "component": "PC1",
         "feature": "Top10perc",
-        "loading": 0.3542739474699039
+        "loading": 0.35427394746990337
       },
       {
         "component": "PC1",
         "feature": "Top25perc",
-        "loading": 0.3440012790682696
+        "loading": 0.3440012790682691
       },
       {
         "component": "PC1",
         "feature": "Expend",
-        "loading": 0.3189087503562584
+        "loading": 0.31890875035625804
       },
       {
         "component": "PC1",
         "feature": "PhD",
-        "loading": 0.31831287489467625
+        "loading": 0.31831287489467597
       },
       {
         "component": "PC1",
         "feature": "Terminal",
-        "loading": 0.31705601617109136
+        "loading": 0.317056016171091
       },
       {
         "component": "PC2",
         "feature": "F.Undergrad",
-        "loading": 0.41767377422521895
+        "loading": 0.4176737742252185
       },
       {
         "component": "PC2",
         "feature": "Enroll",
-        "loading": 0.40372425211028395
+        "loading": 0.40372425211028345
       },
       {
         "component": "PC2",
         "feature": "Accept",
-        "loading": 0.3721167498518506
+        "loading": 0.37211674985185006
       },
       {
         "component": "PC2",
         "feature": "Apps",
-        "loading": 0.3315982273621418
+        "loading": 0.3315982273621417
       },
       {
         "component": "PC2",
         "feature": "P.Undergrad",
-        "loading": 0.31508783004902635
+        "loading": 0.3150878300490261
       },
       {
         "component": "PC3",
         "feature": "Books",
-        "loading": 0.6774116491332316
+        "loading": 0.6774116491332293
       },
       {
         "component": "PC3",
         "feature": "Personal",
-        "loading": 0.4997211195634123
+        "loading": 0.49972111956341553
       },
       {
         "component": "PC3",
         "feature": "S.F.Ratio",
-        "loading": -0.28984840143180346
+        "loading": -0.28984840143180474
       },
       {
         "component": "PC3",
         "feature": "Expend",
-        "loading": 0.22674398489365286
+        "loading": 0.22674398489365413
       },
       {
         "component": "PC3",
         "feature": "Grad.Rate",
-        "loading": -0.20806464942201222
+        "loading": -0.20806464942201439
       }
     ],
     "extreme_score_rows_above_99th_percentile": 8

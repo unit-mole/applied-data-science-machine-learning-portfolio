@@ -18,7 +18,7 @@
   "candidate_models": [
     {
       "model": "random_forest_tuned",
-      "cv_pr_auc_mean": 0.6822448260999373,
+      "cv_pr_auc_mean": 0.6817990919700745,
       "cv_pr_auc_std": null,
       "cv_roc_auc_mean": null,
       "cv_balanced_accuracy_mean": null,
@@ -26,10 +26,10 @@
     },
     {
       "model": "random_forest",
-      "cv_pr_auc_mean": 0.6715063454876791,
-      "cv_pr_auc_std": 0.03675979693281957,
-      "cv_roc_auc_mean": 0.810854471383407,
-      "cv_balanced_accuracy_mean": 0.7411479262960416,
+      "cv_pr_auc_mean": 0.6730988816636624,
+      "cv_pr_auc_std": 0.03693522034639828,
+      "cv_roc_auc_mean": 0.8120201963041831,
+      "cv_balanced_accuracy_mean": 0.743751222592959,
       "selection_stage": "candidate"
     },
     {
@@ -86,78 +86,78 @@
   "selected_model": "random_forest_tuned",
   "selected_threshold_from_training_oof": 0.5000000000000001,
   "test_metrics_default_threshold": {
-    "roc_auc": 0.799530141764479,
-    "pr_auc": 0.6178714434798155,
-    "balanced_accuracy": 0.7090106973449424,
-    "precision": 0.6795580110497238,
-    "recall_sensitivity": 0.537117903930131,
+    "roc_auc": 0.7989114353093084,
+    "pr_auc": 0.6134429734055064,
+    "balanced_accuracy": 0.7133775095720165,
+    "precision": 0.6830601092896175,
+    "recall_sensitivity": 0.5458515283842795,
     "specificity": 0.8809034907597536,
-    "f1": 0.6,
-    "brier_score": 0.16415617324970136,
+    "f1": 0.6067961165048543,
+    "brier_score": 0.16448774790584136,
     "true_negatives": 429,
     "false_positives": 58,
-    "false_negatives": 106,
-    "true_positives": 123
+    "false_negatives": 104,
+    "true_positives": 125
   },
   "test_metrics_selected_threshold": {
-    "roc_auc": 0.799530141764479,
-    "pr_auc": 0.6178714434798155,
-    "balanced_accuracy": 0.7090106973449424,
-    "precision": 0.6795580110497238,
-    "recall_sensitivity": 0.537117903930131,
+    "roc_auc": 0.7989114353093084,
+    "pr_auc": 0.6134429734055064,
+    "balanced_accuracy": 0.7133775095720165,
+    "precision": 0.6830601092896175,
+    "recall_sensitivity": 0.5458515283842795,
     "specificity": 0.8809034907597536,
-    "f1": 0.6,
-    "brier_score": 0.16415617324970136,
+    "f1": 0.6067961165048543,
+    "brier_score": 0.16448774790584136,
     "true_negatives": 429,
     "false_positives": 58,
-    "false_negatives": 106,
-    "true_positives": 123
+    "false_negatives": 104,
+    "true_positives": 125
   },
   "top_permutation_features": [
     {
       "feature": "Agency_Code",
-      "pr_auc_importance_mean": 0.0744462881968996,
-      "importance_std": 0.018691014069168985
+      "pr_auc_importance_mean": 0.07144945014634889,
+      "importance_std": 0.018546504748537362
     },
     {
       "feature": "Product Name",
-      "pr_auc_importance_mean": 0.025453335075081924,
-      "importance_std": 0.0158576217031681
+      "pr_auc_importance_mean": 0.025634083801847025,
+      "importance_std": 0.016353512607238767
     },
     {
       "feature": "Type",
-      "pr_auc_importance_mean": 0.013114299373081765,
-      "importance_std": 0.008101831844317427
+      "pr_auc_importance_mean": 0.012222960079971479,
+      "importance_std": 0.007590307565342401
     },
     {
       "feature": "Sales",
-      "pr_auc_importance_mean": 0.012272681006876257,
-      "importance_std": 0.01833804379218728
+      "pr_auc_importance_mean": 0.010048754846582372,
+      "importance_std": 0.01844837904415367
     },
     {
       "feature": "Destination",
-      "pr_auc_importance_mean": 0.002587834120047187,
-      "importance_std": 0.0019480723268699466
-    },
-    {
-      "feature": "Commision",
-      "pr_auc_importance_mean": 0.002098805207778535,
-      "importance_std": 0.017347557118005934
+      "pr_auc_importance_mean": 0.002839322563744131,
+      "importance_std": 0.0017974818346754061
     },
     {
       "feature": "Channel",
-      "pr_auc_importance_mean": 0.000244854196634577,
-      "importance_std": 0.00013485009659734194
+      "pr_auc_importance_mean": 0.00012628905546981559,
+      "importance_std": 0.00014206742303116726
     },
     {
-      "feature": "Age",
-      "pr_auc_importance_mean": -0.002375557384888103,
-      "importance_std": 0.0063335728350536625
+      "feature": "Commision",
+      "pr_auc_importance_mean": -0.0003738178791065176,
+      "importance_std": 0.017351031004222302
     },
     {
       "feature": "Duration",
-      "pr_auc_importance_mean": -0.0028431109306365776,
-      "importance_std": 0.011186026593520209
+      "pr_auc_importance_mean": -0.0024691182424206406,
+      "importance_std": 0.010702063843031948
+    },
+    {
+      "feature": "Age",
+      "pr_auc_importance_mean": -0.00519553212653114,
+      "importance_std": 0.006807889130669578
     }
   ],
   "decision_note": "False negatives represent missed claimed policies; threshold selection maximized training out-of-fold F1 and was fixed before test evaluation.",

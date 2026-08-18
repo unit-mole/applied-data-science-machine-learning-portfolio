@@ -1,6 +1,6 @@
 model,participant_cv_roc_auc_mean,participant_cv_roc_auc_std,participant_cv_balanced_accuracy_mean,participant_cv_recall_mean
 gradient_boosting,0.78125,0.1375,0.6,0.95
 logistic_regression,0.5875,0.42106016988865935,0.575,0.7749999999999999
-random_forest,0.58125,0.41501756990919475,0.59375,0.9375
+random_forest,0.55,0.3894440481849307,0.59375,0.9375
 support_vector_machine,0.5375,0.4888336458687488,0.59375,0.9375
 dummy_prevalence,0.5,0.10206207261596575,0.5,1.0

@@ -18,9 +18,9 @@
         "channel_2": "Retail",
         "mean_difference": 4571.236459022592,
         "cohen_d": 0.3663067386379002,
-        "welch_p_value": 3.997523791114212e-05,
+        "welch_p_value": 3.9975237911142124e-05,
         "mann_whitney_p_value": 0.0001836887271000237,
-        "holm_adjusted_welch_p": 7.995047582228423e-05
+        "holm_adjusted_welch_p": 7.995047582228425e-05
       },
       {
         "measure": "Milk",
@@ -68,9 +68,9 @@
         "channel_2": "Retail",
         "mean_difference": -337.4802438793838,
         "cohen_d": -0.11972092097250434,
-        "welch_p_value": 0.16947545890793156,
+        "welch_p_value": 0.1694754589079315,
         "mann_whitney_p_value": 0.0005495079248668864,
-        "holm_adjusted_welch_p": 0.16947545890793156
+        "holm_adjusted_welch_p": 0.1694754589079315
       },
       {
         "measure": "total_spend",

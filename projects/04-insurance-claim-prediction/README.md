@@ -8,7 +8,7 @@
 
 **Business question.** Compare and calibrate claim-propensity models using training-only selection and an untouched test set.  
 **Dataset.** 3,000 policy rows with demographic, agency, product, destination, duration, sales, commission, channel, and claim fields.  
-**Verified result.** The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.800, PR-AUC 0.618, and balanced accuracy 0.709.  
+**Verified result.** The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.799, PR-AUC 0.613, and balanced accuracy 0.713.  
 **Decision value.** Understand ranking and threshold trade-offs while keeping claim decisions under human governance.  
 **Primary limitation.** Educational model only; never use it to approve, deny, price, or investigate an insurance claim.
 
@@ -59,14 +59,14 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ## Verified result
 
-> The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.800, PR-AUC 0.618, and balanced accuracy 0.709.
+> The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.799, PR-AUC 0.613, and balanced accuracy 0.713.
 
 ### Primary comparison table
 
 | model | cv_pr_auc_mean | cv_pr_auc_std | cv_roc_auc_mean | cv_balanced_accuracy_mean | selection_stage |
 |---|---|---|---|---|---|
 | random_forest_tuned | 0.682 |  |  |  | randomized_search_8_candidates |
-| random_forest | 0.672 | 0.037 | 0.811 | 0.741 | candidate |
+| random_forest | 0.673 | 0.037 | 0.812 | 0.744 | candidate |
 | logistic_regression | 0.671 | 0.058 | 0.810 | 0.744 | candidate |
 | gradient_boosting | 0.663 | 0.049 | 0.808 | 0.699 | candidate |
 | mlp | 0.654 | 0.079 | 0.785 | 0.680 | candidate |
@@ -88,7 +88,7 @@ All values above are generated from the committed data and synchronized with `re
 
 | Priority | Recommendation | Evidence | Expected benefit | Risk or limitation | How to measure success |
 |---:|---|---|---|---|---|
-| 1 | Use the verified result to prioritize a controlled analytical follow-up. | The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.800, PR-AUC 0.618, and balanced accuracy 0.709. | Better evidence for the stated decision | Observational or historical data may not generalize | Re-run on current data with a prespecified metric |
+| 1 | Use the verified result to prioritize a controlled analytical follow-up. | The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.799, PR-AUC 0.613, and balanced accuracy 0.713. | Better evidence for the stated decision | Observational or historical data may not generalize | Re-run on current data with a prespecified metric |
 | 2 | Review the largest error, uncertainty, or sensitivity segment before deployment. | See saved diagnostic tables | Reduces hidden failure risk | Small subgroups can produce unstable estimates | Track subgroup error and interval coverage |
 | 3 | Keep a transparent baseline in future monitoring. | Baseline comparison is recorded in the notebook | Detects when complexity stops adding value | Baselines do not capture every business driver | Compare every refresh against the same baseline |
 
@@ -140,5 +140,5 @@ Acquire current, licensed, externally representative data; pre-register the prim
 ## Résumé bullets
 
 - Re-engineered a travel insurance analysis into a reproducible imbalanced binary classification workflow with automated data-quality evidence, saved outputs, and a fully executed recruiter-facing notebook.
-- Implemented duplicate leakage control and problem-appropriate validation to produce the verified result: The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.800, PR-AUC 0.618, and balanced accuracy 0.709.
+- Implemented duplicate leakage control and problem-appropriate validation to produce the verified result: The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.799, PR-AUC 0.613, and balanced accuracy 0.713.
 - Translated model/statistical diagnostics into prioritized recommendations while documenting provenance, uncertainty, and responsible-use limits.

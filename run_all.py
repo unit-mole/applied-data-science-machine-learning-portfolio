@@ -35,8 +35,9 @@ def main() -> int:
             timings["runtime_check"] = run([sys.executable, "scripts/check_runtime.py"], log)
             for script in sorted((ROOT / "projects").glob("*/src/analysis.py")):
                 timings[script.parents[1].name] = run([sys.executable, str(script.relative_to(ROOT))], log)
-            timings["content_generation"] = run([sys.executable, "scripts/generate_portfolio_content.py"], log)
-            if not args.quick: timings["notebook_execution"] = run([sys.executable, "scripts/execute_notebooks.py"], log)
+            if not args.quick:
+                timings["content_generation"] = run([sys.executable, "scripts/generate_portfolio_content.py"], log)
+                timings["notebook_execution"] = run([sys.executable, "scripts/execute_notebooks.py"], log)
             timings["portfolio_reports"] = run([sys.executable, "scripts/generate_portfolio_reports.py"], log)
             timings["validation"] = run([sys.executable, "validate_portfolio.py"], log)
             timings["tests"] = run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"], log)
@@ -53,4 +54,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

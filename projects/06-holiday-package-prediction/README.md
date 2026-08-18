@@ -67,7 +67,7 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 | logistic_regression | 0.714 | 0.032 | 0.724 | 0.664 |
 | gradient_boosting | 0.710 | 0.050 | 0.736 | 0.661 |
 | linear_discriminant_analysis | 0.708 | 0.031 | 0.721 | 0.658 |
-| random_forest | 0.699 | 0.043 | 0.728 | 0.676 |
+| random_forest | 0.699 | 0.042 | 0.729 | 0.673 |
 | decision_tree | 0.636 | 0.021 | 0.691 | 0.629 |
 | dummy_prevalence | 0.460 | 0.003 | 0.500 | 0.500 |
 

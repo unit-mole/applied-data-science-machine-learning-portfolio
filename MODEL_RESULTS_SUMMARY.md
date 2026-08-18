@@ -34,12 +34,12 @@ Only executed metrics are reported. Selection metrics come from training-only, g
 
 ## Insurance Claim Propensity Modeling
 
-**Verified result:** The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.800, PR-AUC 0.618, and balanced accuracy 0.709.
+**Verified result:** The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.799, PR-AUC 0.613, and balanced accuracy 0.713.
 
 | model | cv_pr_auc_mean | cv_pr_auc_std | cv_roc_auc_mean | cv_balanced_accuracy_mean | selection_stage |
 |---|---|---|---|---|---|
-| random_forest_tuned | 0.6822 | None | None | None | randomized_search_8_candidates |
-| random_forest | 0.6715 | 0.0368 | 0.8109 | 0.7411 | candidate |
+| random_forest_tuned | 0.6818 | None | None | None | randomized_search_8_candidates |
+| random_forest | 0.6731 | 0.0369 | 0.8120 | 0.7438 | candidate |
 | logistic_regression | 0.6710 | 0.0580 | 0.8103 | 0.7445 | candidate |
 | gradient_boosting | 0.6634 | 0.0489 | 0.8084 | 0.6991 | candidate |
 | mlp | 0.6539 | 0.0795 | 0.7851 | 0.6804 | candidate |
@@ -61,11 +61,11 @@ Only executed metrics are reported. Selection metrics come from training-only, g
 
 ## Cubic Zirconia Price Modeling
 
-**Verified result:** Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 562, and 90.7% coverage for the training-calibrated 90% diagnostic interval.
+**Verified result:** Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 563, and 90.6% coverage for the training-calibrated 90% diagnostic interval.
 
 | model | cv_rmse_mean | cv_rmse_std | cv_mae_mean | cv_r_squared_mean |
 |---|---|---|---|---|
-| hist_gradient_boosting | 574.1499 | 32.5782 | 299.8930 | 0.9794 |
+| hist_gradient_boosting | 573.3211 | 30.0947 | 299.7832 | 0.9795 |
 | random_forest | 594.7283 | 27.0487 | 298.8835 | 0.9779 |
 | log_target_ridge | 921.8108 | 81.0471 | 443.5555 | 0.9467 |
 | linear_regression | 1128.5471 | 31.8824 | 742.0371 | 0.9205 |
@@ -92,7 +92,7 @@ Only executed metrics are reported. Selection metrics come from training-only, g
 | logistic_regression | 0.7136 | 0.0319 | 0.7240 | 0.6642 |
 | gradient_boosting | 0.7096 | 0.0499 | 0.7364 | 0.6611 |
 | linear_discriminant_analysis | 0.7080 | 0.0311 | 0.7210 | 0.6576 |
-| random_forest | 0.6993 | 0.0425 | 0.7276 | 0.6765 |
+| random_forest | 0.6988 | 0.0423 | 0.7287 | 0.6729 |
 | decision_tree | 0.6364 | 0.0208 | 0.6908 | 0.6291 |
 | dummy_prevalence | 0.4602 | 0.0034 | 0.5000 | 0.5000 |
 
@@ -110,11 +110,11 @@ Only executed metrics are reported. Selection metrics come from training-only, g
 
 ## Retrospective Election Survey Classification
 
-**Verified result:** The calibrated random forest reaches retrospective test ROC-AUC 0.907 and balanced accuracy 0.800; this is respondent classification, not polling.
+**Verified result:** The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling.
 
 | model | cv_roc_auc_mean | cv_roc_auc_std | cv_balanced_accuracy_mean | cv_f1_mean |
 |---|---|---|---|---|
-| random_forest | 0.8821 | 0.0258 | 0.8030 | 0.8632 |
+| random_forest | 0.8836 | 0.0255 | 0.8043 | 0.8530 |
 | linear_discriminant_analysis | 0.8811 | 0.0169 | 0.7832 | 0.8789 |
 | support_vector_machine | 0.8797 | 0.0295 | 0.8139 | 0.8598 |
 | logistic_regression | 0.8790 | 0.0174 | 0.8078 | 0.8549 |
@@ -175,7 +175,7 @@ Only executed metrics are reported. Selection metrics come from training-only, g
 |---|---|---|---|---|
 | gradient_boosting | 0.7812 | 0.1375 | 0.6000 | 0.9500 |
 | logistic_regression | 0.5875 | 0.4211 | 0.5750 | 0.7750 |
-| random_forest | 0.5813 | 0.4150 | 0.5938 | 0.9375 |
+| random_forest | 0.5500 | 0.3894 | 0.5938 | 0.9375 |
 | support_vector_machine | 0.5375 | 0.4888 | 0.5938 | 0.9375 |
 | dummy_prevalence | 0.5000 | 0.1021 | 0.5000 | 1.0000 |
 
@@ -228,8 +228,8 @@ Only executed metrics are reported. Selection metrics come from training-only, g
 |---|---|---|---|---|
 | rolling_7_baseline | 499.8500 | 87.2231 | 89.8868 | 0.9465 |
 | last_value | 570.8421 | 177.5552 | 88.2142 | 0.9259 |
-| hist_gradient_boosting_lags | 935.4031 | 497.0915 | 125.0463 | 0.7875 |
-| ridge_country_lags | 22177568938844.5742 | 38412675098825.9688 | 663354371151.7607 | -293419392032395526144.0000 |
+| hist_gradient_boosting_lags | 908.7679 | 483.6822 | 125.2566 | 0.7998 |
+| ridge_country_lags | 22190367281232.2305 | 38434842478420.1250 | 663709794902.9479 | -293758145618887606272.0000 |
 
 **Selection rationale / validation:**
 

@@ -8,7 +8,7 @@
 
 **Business question.** Evaluate respondent-level party classification while explicitly separating it from representative polling or forecasting.  
 **Dataset.** 1,525 historical survey rows with vote, age, leader ratings, economic assessments, Europe attitudes, knowledge, and gender.  
-**Verified result.** The calibrated random forest reaches retrospective test ROC-AUC 0.907 and balanced accuracy 0.800; this is respondent classification, not polling.  
+**Verified result.** The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling.  
 **Decision value.** Understand classification signal and uncertainty without making live-election claims.  
 **Primary limitation.** The undocumented sampling and weighting design prevents representative election inference or future-election claims.
 
@@ -58,13 +58,13 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ## Verified result
 
-> The calibrated random forest reaches retrospective test ROC-AUC 0.907 and balanced accuracy 0.800; this is respondent classification, not polling.
+> The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling.
 
 ### Primary comparison table
 
 | model | cv_roc_auc_mean | cv_roc_auc_std | cv_balanced_accuracy_mean | cv_f1_mean |
 |---|---|---|---|---|
-| random_forest | 0.882 | 0.026 | 0.803 | 0.863 |
+| random_forest | 0.884 | 0.026 | 0.804 | 0.853 |
 | linear_discriminant_analysis | 0.881 | 0.017 | 0.783 | 0.879 |
 | support_vector_machine | 0.880 | 0.029 | 0.814 | 0.860 |
 | logistic_regression | 0.879 | 0.017 | 0.808 | 0.855 |
@@ -86,7 +86,7 @@ All values above are generated from the committed data and synchronized with `re
 
 | Priority | Recommendation | Evidence | Expected benefit | Risk or limitation | How to measure success |
 |---:|---|---|---|---|---|
-| 1 | Use the verified result to prioritize a controlled analytical follow-up. | The calibrated random forest reaches retrospective test ROC-AUC 0.907 and balanced accuracy 0.800; this is respondent classification, not polling. | Better evidence for the stated decision | Observational or historical data may not generalize | Re-run on current data with a prespecified metric |
+| 1 | Use the verified result to prioritize a controlled analytical follow-up. | The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling. | Better evidence for the stated decision | Observational or historical data may not generalize | Re-run on current data with a prespecified metric |
 | 2 | Review the largest error, uncertainty, or sensitivity segment before deployment. | See saved diagnostic tables | Reduces hidden failure risk | Small subgroups can produce unstable estimates | Track subgroup error and interval coverage |
 | 3 | Keep a transparent baseline in future monitoring. | Baseline comparison is recorded in the notebook | Detects when complexity stops adding value | Baselines do not capture every business driver | Compare every refresh against the same baseline |
 
@@ -138,5 +138,5 @@ Acquire current, licensed, externally representative data; pre-register the prim
 ## Résumé bullets
 
 - Re-engineered a political survey research analysis into a reproducible historical binary classification workflow with automated data-quality evidence, saved outputs, and a fully executed recruiter-facing notebook.
-- Implemented stratified cv and problem-appropriate validation to produce the verified result: The calibrated random forest reaches retrospective test ROC-AUC 0.907 and balanced accuracy 0.800; this is respondent classification, not polling.
+- Implemented stratified cv and problem-appropriate validation to produce the verified result: The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling.
 - Translated model/statistical diagnostics into prioritized recommendations while documenting provenance, uncertainty, and responsible-use limits.

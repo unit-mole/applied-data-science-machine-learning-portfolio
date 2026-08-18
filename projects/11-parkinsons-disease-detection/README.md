@@ -66,7 +66,7 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 |---|---|---|---|---|
 | gradient_boosting | 0.781 | 0.138 | 0.600 | 0.950 |
 | logistic_regression | 0.588 | 0.421 | 0.575 | 0.775 |
-| random_forest | 0.581 | 0.415 | 0.594 | 0.938 |
+| random_forest | 0.550 | 0.389 | 0.594 | 0.938 |
 | support_vector_machine | 0.537 | 0.489 | 0.594 | 0.938 |
 | dummy_prevalence | 0.500 | 0.102 | 0.500 | 1.000 |
 

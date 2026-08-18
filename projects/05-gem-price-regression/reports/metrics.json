@@ -20,31 +20,31 @@
   "candidate_models": [
     {
       "model": "hist_gradient_boosting",
-      "cv_rmse_mean": 574.1499128376028,
-      "cv_rmse_std": 32.57818103475498,
-      "cv_mae_mean": 299.89295747303333,
-      "cv_r_squared_mean": 0.9794035638833652
+      "cv_rmse_mean": 573.3210524138206,
+      "cv_rmse_std": 30.09470643918356,
+      "cv_mae_mean": 299.78321020226537,
+      "cv_r_squared_mean": 0.9794687496720678
     },
     {
       "model": "random_forest",
       "cv_rmse_mean": 594.7283311961808,
-      "cv_rmse_std": 27.048705538588035,
+      "cv_rmse_std": 27.04870553858805,
       "cv_mae_mean": 298.883543207725,
       "cv_r_squared_mean": 0.9779193155420463
     },
     {
       "model": "log_target_ridge",
-      "cv_rmse_mean": 921.8108130569929,
-      "cv_rmse_std": 81.04714913333639,
-      "cv_mae_mean": 443.55546400977244,
-      "cv_r_squared_mean": 0.946723671023329
+      "cv_rmse_mean": 921.8108130570188,
+      "cv_rmse_std": 81.04714913334652,
+      "cv_mae_mean": 443.55546400977903,
+      "cv_r_squared_mean": 0.946723671023326
     },
     {
       "model": "linear_regression",
-      "cv_rmse_mean": 1128.547144575049,
-      "cv_rmse_std": 31.882418149299895,
-      "cv_mae_mean": 742.0371098008187,
-      "cv_r_squared_mean": 0.9205280315349922
+      "cv_rmse_mean": 1128.547144575048,
+      "cv_rmse_std": 31.88241814929543,
+      "cv_mae_mean": 742.0371098008181,
+      "cv_r_squared_mean": 0.9205280315349924
     },
     {
       "model": "median_baseline",
@@ -56,95 +56,95 @@
   ],
   "selected_model": "hist_gradient_boosting",
   "test_metrics": {
-    "mae": 294.5673093269005,
-    "rmse": 562.0160758888537,
-    "r_squared": 0.9812394799922916,
-    "mape_percent": 8.414941823619133
+    "mae": 294.59291360103333,
+    "rmse": 563.0785105127254,
+    "r_squared": 0.9811684832132817,
+    "mape_percent": 8.426783225051986
   },
   "empirical_90_percent_interval": {
-    "absolute_residual_radius": 753.9316865720721,
-    "test_coverage": 0.9067482387838339,
+    "absolute_residual_radius": 750.3671880805578,
+    "test_coverage": 0.9056358917315536,
     "method": "training calibration residual quantile; constant-width diagnostic interval"
   },
   "residual_diagnostics": {
-    "mean_residual": -5.797309499706956,
-    "residual_skewness": -0.709395492295249,
-    "breusch_pagan_proxy_spearman_abs_residual_vs_prediction": 0.6305582258248401
+    "mean_residual": -6.671122622690334,
+    "residual_skewness": -0.7602333770924546,
+    "breusch_pagan_proxy_spearman_abs_residual_vs_prediction": 0.6262986222080734
   },
   "error_by_carat_band": [
     {
       "carat_band": "(0.199, 0.39]",
       "rows": 1383,
-      "mae": 72.58757949661923,
-      "rmse": 90.22843780796995,
-      "r_squared": 0.8072656645500709,
-      "mape_percent": 10.48914581049071
+      "mae": 72.3115378873499,
+      "rmse": 89.70347263379868,
+      "r_squared": 0.8095018658679576,
+      "mape_percent": 10.449126349339064
     },
     {
       "carat_band": "(0.39, 0.7]",
       "rows": 1367,
-      "mae": 125.97624103216182,
-      "rmse": 179.92654256350446,
-      "r_squared": 0.9150623877893812,
-      "mape_percent": 8.414125968110515
+      "mae": 126.12408798478141,
+      "rmse": 178.28216964252886,
+      "r_squared": 0.9166078060484473,
+      "mape_percent": 8.454013205494117
     },
     {
       "carat_band": "(0.7, 1.05]",
       "rows": 1305,
-      "mae": 272.7606803677613,
-      "rmse": 384.7954919755582,
-      "r_squared": 0.9513464688552545,
-      "mape_percent": 6.773352507607762
+      "mae": 274.6908502870659,
+      "rmse": 388.9558253459853,
+      "r_squared": 0.9502887166279081,
+      "mape_percent": 6.824788266605293
     },
     {
       "carat_band": "(1.05, 4.0]",
       "rows": 1339,
-      "mae": 717.2107802050658,
-      "rmse": 1042.4227562649153,
-      "r_squared": 0.9355714703082127,
-      "mape_percent": 7.873317639923644
+      "mae": 715.5669388842059,
+      "rmse": 1043.5622006984725,
+      "r_squared": 0.9354305431232992,
+      "mape_percent": 7.871502789368268
     }
   ],
   "top_permutation_features": [
     {
       "feature": "y",
-      "rmse_importance": 2797.2454809771925,
-      "importance_std": 23.004515899531775
+      "rmse_importance": 2817.4166221978467,
+      "importance_std": 23.42102143701029
     },
     {
       "feature": "carat",
-      "rmse_importance": 2121.411030501753,
-      "importance_std": 22.18293608724469
+      "rmse_importance": 2076.5015826109657,
+      "importance_std": 22.146507512569933
     },
     {
       "feature": "clarity",
-      "rmse_importance": 1122.3973302003756,
-      "importance_std": 25.026535268905704
+      "rmse_importance": 1123.5471533537698,
+      "importance_std": 24.727302729301957
     },
     {
       "feature": "color",
-      "rmse_importance": 729.5562311774722,
-      "importance_std": 17.182073380384363
+      "rmse_importance": 724.6651859152796,
+      "importance_std": 16.892531686258316
     },
     {
       "feature": "z",
-      "rmse_importance": 437.47238724511135,
-      "importance_std": 7.321599859546574
+      "rmse_importance": 447.49326033602546,
+      "importance_std": 6.628610717016318
     },
     {
       "feature": "x",
-      "rmse_importance": 51.784466793747164,
-      "importance_std": 1.6691910834123926
+      "rmse_importance": 57.04977938570734,
+      "importance_std": 2.0326667393337763
     },
     {
       "feature": "cut",
-      "rmse_importance": 33.40237122528058,
-      "importance_std": 3.246648274331372
+      "rmse_importance": 37.338773288946584,
+      "importance_std": 2.8594489399072907
     },
     {
       "feature": "depth",
-      "rmse_importance": 19.37238765175233,
-      "importance_std": 2.239277842876672
+      "rmse_importance": 18.581153177405884,
+      "importance_std": 2.3019052877359774
     }
   ],
   "interpretation_caution": "Feature importance and fitted relationships are associative; the dataset does not support causal appraisal claims."

@@ -6,14 +6,14 @@
 | Problem type | Historical binary classification |
 | Dataset | 1,525 historical survey rows with vote, age, leader ratings, economic assessments, Europe attitudes, knowledge, and gender. |
 | Core methods | Stratified CV, dummy/logistic/LDA/KNN/SVM/random-forest comparison, probability calibration, untouched test evaluation, permutation importance, and age/gender sensitivity tables. |
-| Final result | The calibrated random forest reaches retrospective test ROC-AUC 0.907 and balanced accuracy 0.800; this is respondent classification, not polling. |
+| Final result | The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling. |
 | Decision supported | Understand classification signal and uncertainty without making live-election claims. |
 | Primary evidence | `reports/figures/election_model_evidence.png` |
 | Executed notebook | `notebooks/01_end_to_end_analysis.ipynb` |
 
 ## One-minute explanation
 
-The calibrated random forest reaches retrospective test ROC-AUC 0.907 and balanced accuracy 0.800; this is respondent classification, not polling. The implementation deliberately preserves the relevant entity, time, or train/test boundary and reports limitations instead of optimizing for an impressive-looking score.
+The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling. The implementation deliberately preserves the relevant entity, time, or train/test boundary and reports limitations instead of optimizing for an impressive-looking score.
 
 ## Review order
 

@@ -17,10 +17,10 @@
   "candidate_models": [
     {
       "model": "random_forest",
-      "cv_roc_auc_mean": 0.8820572906493744,
-      "cv_roc_auc_std": 0.025791283325202648,
-      "cv_balanced_accuracy_mean": 0.803019063244658,
-      "cv_f1_mean": 0.8632021896404316
+      "cv_roc_auc_mean": 0.883560637134263,
+      "cv_roc_auc_std": 0.025529520398154676,
+      "cv_balanced_accuracy_mean": 0.8042982391890309,
+      "cv_f1_mean": 0.8529553660156562
     },
     {
       "model": "linear_discriminant_analysis",
@@ -60,59 +60,59 @@
   ],
   "selected_model": "random_forest",
   "test_metrics": {
-    "roc_auc": 0.9069224786103189,
-    "pr_auc": 0.950848376007488,
-    "balanced_accuracy": 0.7997148042520094,
-    "precision": 0.8705035971223022,
-    "recall_sensitivity": 0.9097744360902256,
-    "specificity": 0.6896551724137931,
-    "f1": 0.8897058823529411,
-    "brier_score": 0.10810542087383816,
-    "true_negatives": 80,
-    "false_positives": 36,
-    "false_negatives": 24,
-    "true_positives": 242
+    "roc_auc": 0.9085753176043557,
+    "pr_auc": 0.9525583911284567,
+    "balanced_accuracy": 0.8064557946590614,
+    "precision": 0.8763636363636363,
+    "recall_sensitivity": 0.9060150375939849,
+    "specificity": 0.7068965517241379,
+    "f1": 0.8909426987060998,
+    "brier_score": 0.10754338564163567,
+    "true_negatives": 82,
+    "false_positives": 34,
+    "false_negatives": 25,
+    "true_positives": 241
   },
   "top_permutation_features": [
     {
       "feature": "Hague",
-      "importance": 0.07855117319159971,
-      "importance_std": 0.015982899283794188
+      "importance": 0.07796781825252788,
+      "importance_std": 0.015851797184306148
     },
     {
       "feature": "Europe",
-      "importance": 0.06433027612133788,
-      "importance_std": 0.013762374966103481
+      "importance": 0.0659150570391496,
+      "importance_std": 0.013748788795535755
     },
     {
       "feature": "Blair",
-      "importance": 0.05883458646616545,
-      "importance_std": 0.01260584196539954
+      "importance": 0.05712989369976666,
+      "importance_std": 0.012008469838218041
     },
     {
       "feature": "political.knowledge",
-      "importance": 0.030948599948146277,
-      "importance_std": 0.004880519777186557
+      "importance": 0.031365050557428054,
+      "importance_std": 0.0049134335218974255
     },
     {
       "feature": "age",
-      "importance": 0.009706378014000528,
-      "importance_std": 0.005729114072554374
+      "importance": 0.010458257713248648,
+      "importance_std": 0.005352128253314142
     },
     {
       "feature": "economic.cond.national",
-      "importance": 0.008709813326419546,
-      "importance_std": 0.0031050909297940282
+      "importance": 0.00960915219082189,
+      "importance_std": 0.0032197181104103687
     },
     {
       "feature": "gender",
-      "importance": 0.0021373476795437272,
-      "importance_std": 0.0011272641353189696
+      "importance": 0.002672089707026204,
+      "importance_std": 0.0012089094892502508
     },
     {
       "feature": "economic.cond.household",
-      "importance": 0.00017824734249424212,
-      "importance_std": 0.0015654900722727027
+      "importance": 0.0008653098262898839,
+      "importance_std": 0.0016413960010922162
     }
   ],
   "subgroup_sensitivity": [
@@ -120,14 +120,14 @@
       "field": "gender",
       "group": "female",
       "rows": 202,
-      "accuracy": 0.8415841584158416,
+      "accuracy": 0.8514851485148515,
       "labour_share": 0.6633663366336634
     },
     {
       "field": "gender",
       "group": "male",
       "rows": 180,
-      "accuracy": 0.8444444444444444,
+      "accuracy": 0.8388888888888889,
       "labour_share": 0.7333333333333333
     },
     {
@@ -141,7 +141,7 @@
       "field": "age_group",
       "group": "35-54",
       "rows": 162,
-      "accuracy": 0.8580246913580247,
+      "accuracy": 0.8641975308641975,
       "labour_share": 0.7160493827160493
     },
     {

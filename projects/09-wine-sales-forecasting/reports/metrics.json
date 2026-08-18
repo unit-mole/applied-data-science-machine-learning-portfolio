@@ -20,10 +20,10 @@
       "rolling_origin_candidates": [
         {
           "model": "trend_plus_month",
-          "mean_rmse": 12.372317093276779,
-          "std_rmse": 2.0824218353549,
-          "mean_mae": 9.469773186386247,
-          "mean_mape_percent": 14.751996473207234
+          "mean_rmse": 12.372317093276783,
+          "std_rmse": 2.0824218353548947,
+          "mean_mae": 9.469773186386252,
+          "mean_mape_percent": 14.751996473207237
         },
         {
           "model": "seasonal_naive",
@@ -49,9 +49,9 @@
         {
           "model": "ridge_lag_1_12",
           "mean_rmse": 16.33556027789511,
-          "std_rmse": 2.7777523272676685,
-          "mean_mae": 15.176329743394001,
-          "mean_mape_percent": 28.150877041671844
+          "std_rmse": 2.777752327267667,
+          "mean_mae": 15.176329743394005,
+          "mean_mape_percent": 28.150877041671848
         },
         {
           "model": "holt_winters__0.5_0.1_0.2",
@@ -62,19 +62,19 @@
         }
       ],
       "final_holdout_metrics": {
-        "mae": 10.464110889110898,
+        "mae": 10.464110889110895,
         "rmse": 13.564981814422381,
         "r_squared": -0.08040355635347773,
-        "mape_percent": 21.66621179672109
+        "mape_percent": 21.666211796721083
       },
       "diagnostic_interval": {
-        "radius": 21.339534883720944,
+        "radius": 21.339534883720972,
         "coverage": 0.9166666666666666
       },
       "residual_ljung_box": {
         "lags": 12,
-        "q_statistic": 13.311138949920654,
-        "p_value": 0.34683723715662457
+        "q_statistic": 13.311138949920664,
+        "p_value": 0.34683723715662373
       }
     },
     "sparkling": {
@@ -96,17 +96,17 @@
         },
         {
           "model": "ridge_lag_1_12",
-          "mean_rmse": 310.88287836803374,
-          "std_rmse": 108.30784564815319,
-          "mean_mae": 246.3552892761911,
-          "mean_mape_percent": 11.110579714877332
+          "mean_rmse": 310.8828783680336,
+          "std_rmse": 108.30784564815332,
+          "mean_mae": 246.35528927619092,
+          "mean_mape_percent": 11.11057971487733
         },
         {
           "model": "trend_plus_month",
-          "mean_rmse": 336.4336361463695,
-          "std_rmse": 66.06523889033859,
-          "mean_mae": 236.96803501606271,
-          "mean_mape_percent": 12.379141614963231
+          "mean_rmse": 336.43363614636957,
+          "std_rmse": 66.0652388903387,
+          "mean_mae": 236.96803501606288,
+          "mean_mape_percent": 12.37914161496324
         },
         {
           "model": "holt_winters__0.3_0.1_0.3",
@@ -135,7 +135,7 @@
       },
       "residual_ljung_box": {
         "lags": 12,
-        "q_statistic": 9.811978558774253,
+        "q_statistic": 9.811978558774255,
         "p_value": 0.6324515641411514
       }
     }

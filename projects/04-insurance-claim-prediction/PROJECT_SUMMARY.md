@@ -6,14 +6,14 @@
 | Problem type | Imbalanced binary classification |
 | Dataset | 3,000 policy rows with demographic, agency, product, destination, duration, sales, commission, channel, and claim fields. |
 | Core methods | Duplicate leakage control, mixed-type pipelines, dummy baseline, logistic/CART/random-forest/boosting/MLP comparison, randomized tuning, stratified CV, calibration, threshold selection, PR-AUC, and permutation importance. |
-| Final result | The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.800, PR-AUC 0.618, and balanced accuracy 0.709. |
+| Final result | The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.799, PR-AUC 0.613, and balanced accuracy 0.713. |
 | Decision supported | Understand ranking and threshold trade-offs while keeping claim decisions under human governance. |
 | Primary evidence | `reports/figures/insurance_model_evidence.png` |
 | Executed notebook | `notebooks/01_end_to_end_analysis.ipynb` |
 
 ## One-minute explanation
 
-The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.800, PR-AUC 0.618, and balanced accuracy 0.709. The implementation deliberately preserves the relevant entity, time, or train/test boundary and reports limitations instead of optimizing for an impressive-looking score.
+The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.799, PR-AUC 0.613, and balanced accuracy 0.713. The implementation deliberately preserves the relevant entity, time, or train/test boundary and reports limitations instead of optimizing for an impressive-looking score.
 
 ## Review order
 

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "source_rows": 1155,
+    "valid_trip_rows": 1154,
+    "invalid_or_summary_rows_removed": 0,
+    "exact_duplicates_removed": 1,
+    "missing_purpose_rows_retained_as_unknown": 502,
+    "nonpositive_duration_rows": 4,
+    "suspicious_speed_rows_over_100_mph": 19
+  },
+  "scope": {
+    "first_trip": "2016-01-01 21:11:00",
+    "last_trip": "2016-12-31 22:08:00",
+    "observed_months": 12,
+    "unit": "trip"
+  },
+  "trip_summary": {
+    "total_trips": 1154,
+    "total_miles": 12194.800000000001,
+    "median_trip_miles": 6.0,
+    "median_duration_minutes": 16.0,
+    "business_mileage_share": 0.9411470462820218,
+    "distance_outlier_trips": 77
+  },
+  "leading_patterns": {
+    "highest_mileage_month": "2016-10",
+    "highest_mileage_weekday": "Friday",
+    "highest_mileage_known_purpose": "Meeting",
+    "most_frequent_known_route": "Morrisville \u2192 Cary"
+  },
+  "recommendations": [
+    "Maintain explicit purpose capture because missing purpose limits reimbursement and productivity analysis.",
+    "Review high-mileage outliers individually before expense or utilization decisions.",
+    "Use recurring route and weekday concentrations for scheduling\u2014not for employee surveillance."
+  ],
+  "limitation": "This is one personal log over a limited period; location and purpose data are sensitive and findings do not generalize to platform-wide demand."
+}

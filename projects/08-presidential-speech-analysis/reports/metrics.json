@@ -1,0 +1,318 @@
+{
+  "status": "passed",
+  "documents": {
+    "Roosevelt 1941": {
+      "words": 1346,
+      "sentences": 67,
+      "unique_words": 490,
+      "unique_content_words": 375,
+      "lexical_diversity": 0.3640416047548291,
+      "average_sentence_words": 20.08955223880597,
+      "flesch_reading_ease_approximate": 59.984074759929925,
+      "top_content_words": {
+        "nation": 12,
+        "know": 10,
+        "spirit": 9,
+        "life": 9,
+        "democracy": 9,
+        "people": 7,
+        "america": 7,
+        "years": 6,
+        "freedom": 6,
+        "human": 5,
+        "men": 5,
+        "new": 5,
+        "body": 5,
+        "mind": 5,
+        "speaks": 5
+      }
+    },
+    "Kennedy 1961": {
+      "words": 1367,
+      "sentences": 54,
+      "unique_words": 532,
+      "unique_content_words": 409,
+      "lexical_diversity": 0.38917337234820776,
+      "average_sentence_words": 25.314814814814813,
+      "flesch_reading_ease_approximate": 59.22239419924682,
+      "top_content_words": {
+        "let": 16,
+        "world": 8,
+        "sides": 8,
+        "new": 7,
+        "pledge": 7,
+        "citizens": 5,
+        "power": 5,
+        "shall": 5,
+        "free": 5,
+        "nations": 5,
+        "ask": 5,
+        "president": 4,
+        "fellow": 4,
+        "freedom": 4,
+        "man": 4
+      }
+    },
+    "Nixon 1973": {
+      "words": 1818,
+      "sentences": 71,
+      "unique_words": 505,
+      "unique_content_words": 378,
+      "lexical_diversity": 0.2777777777777778,
+      "average_sentence_words": 25.6056338028169,
+      "flesch_reading_ease_approximate": 56.78389555152701,
+      "top_content_words": {
+        "let": 22,
+        "america": 21,
+        "peace": 19,
+        "world": 18,
+        "new": 15,
+        "nation": 11,
+        "responsibility": 11,
+        "government": 10,
+        "great": 9,
+        "home": 9,
+        "abroad": 8,
+        "years": 7,
+        "shall": 7,
+        "policies": 7,
+        "role": 7
+      }
+    }
+  },
+  "tfidf_similarity_pairs": [
+    {
+      "pair": "Kennedy 1961 vs Nixon 1973",
+      "cosine_similarity": 0.11406895263644695
+    },
+    {
+      "pair": "Roosevelt 1941 vs Nixon 1973",
+      "cosine_similarity": 0.08466142964486238
+    },
+    {
+      "pair": "Roosevelt 1941 vs Kennedy 1961",
+      "cosine_similarity": 0.07402499644851962
+    }
+  ],
+  "distinctive_terms": {
+    "Kennedy 1961": [
+      {
+        "term": "sides",
+        "tfidf": 0.09044985101729203
+      },
+      {
+        "term": "let sides",
+        "tfidf": 0.07664482901331103
+      },
+      {
+        "term": "pledge",
+        "tfidf": 0.0658065807672732
+      },
+      {
+        "term": "let",
+        "tfidf": 0.06544562840320618
+      },
+      {
+        "term": "join",
+        "tfidf": 0.061640776836939866
+      },
+      {
+        "term": "begin",
+        "tfidf": 0.061640776836939866
+      },
+      {
+        "term": "globe",
+        "tfidf": 0.061640776836939866
+      },
+      {
+        "term": "control",
+        "tfidf": 0.061640776836939866
+      },
+      {
+        "term": "final",
+        "tfidf": 0.061640776836939866
+      },
+      {
+        "term": "dare",
+        "tfidf": 0.061640776836939866
+      },
+      {
+        "term": "power",
+        "tfidf": 0.058290368019827614
+      },
+      {
+        "term": "free",
+        "tfidf": 0.058290368019827614
+      },
+      {
+        "term": "ask",
+        "tfidf": 0.058290368019827614
+      },
+      {
+        "term": "citizens",
+        "tfidf": 0.058290368019827614
+      },
+      {
+        "term": "world",
+        "tfidf": 0.053421139080997736
+      }
+    ],
+    "Nixon 1973": [
+      {
+        "term": "abroad",
+        "tfidf": 0.08288241705586609
+      },
+      {
+        "term": "peace",
+        "tfidf": 0.08074016322146123
+      },
+      {
+        "term": "policies",
+        "tfidf": 0.07928845223342657
+      },
+      {
+        "term": "act",
+        "tfidf": 0.07023238415552868
+      },
+      {
+        "term": "responsibilities",
+        "tfidf": 0.07023238415552868
+      },
+      {
+        "term": "respect",
+        "tfidf": 0.07023238415552868
+      },
+      {
+        "term": "era",
+        "tfidf": 0.07023238415552868
+      },
+      {
+        "term": "responsibility",
+        "tfidf": 0.0695527603251574
+      },
+      {
+        "term": "government",
+        "tfidf": 0.0676018214173145
+      },
+      {
+        "term": "let",
+        "tfidf": 0.065032390457386
+      },
+      {
+        "term": "america",
+        "tfidf": 0.06429289487518576
+      },
+      {
+        "term": "promise",
+        "tfidf": 0.0642265299663751
+      },
+      {
+        "term": "old policies",
+        "tfidf": 0.0642265299663751
+      },
+      {
+        "term": "world",
+        "tfidf": 0.06184247122055748
+      },
+      {
+        "term": "years",
+        "tfidf": 0.060300911619312114
+      }
+    ],
+    "Roosevelt 1941": [
+      {
+        "term": "democracy",
+        "tfidf": 0.09906377513024829
+      },
+      {
+        "term": "body",
+        "tfidf": 0.08085161499324119
+      },
+      {
+        "term": "speaks",
+        "tfidf": 0.08085161499324119
+      },
+      {
+        "term": "mind",
+        "tfidf": 0.08085161499324119
+      },
+      {
+        "term": "know",
+        "tfidf": 0.07782330763499075
+      },
+      {
+        "term": "spirit",
+        "tfidf": 0.07534055440025521
+      },
+      {
+        "term": "years",
+        "tfidf": 0.06578602818668543
+      },
+      {
+        "term": "like person",
+        "tfidf": 0.06502403907560449
+      },
+      {
+        "term": "spirit faith",
+        "tfidf": 0.06502403907560449
+      },
+      {
+        "term": "task",
+        "tfidf": 0.06502403907560449
+      },
+      {
+        "term": "task people",
+        "tfidf": 0.06502403907560449
+      },
+      {
+        "term": "day task",
+        "tfidf": 0.06502403907560449
+      },
+      {
+        "term": "sacred",
+        "tfidf": 0.06502403907560449
+      },
+      {
+        "term": "destiny",
+        "tfidf": 0.06502403907560449
+      },
+      {
+        "term": "came",
+        "tfidf": 0.06502403907560449
+      }
+    ]
+  },
+  "exploratory_topics": [
+    {
+      "topic": 1,
+      "top_terms": "world, peace, new, let, freedom, shall, role, home, america, nations"
+    },
+    {
+      "topic": 2,
+      "top_terms": "nation, body, mind, people, know, live, day, speaks, task, day task"
+    },
+    {
+      "topic": 3,
+      "top_terms": "spirit, faith, america, years, faith america, spirit faith, spirit america, lives, country, understand"
+    }
+  ],
+  "topic_share_by_speech": {
+    "Kennedy 1961": {
+      "1": 0.5882,
+      "2": 0.1569,
+      "3": 0.2549
+    },
+    "Nixon 1973": {
+      "1": 0.6269,
+      "2": 0.194,
+      "3": 0.1791
+    },
+    "Roosevelt 1941": {
+      "1": 0.2031,
+      "2": 0.5625,
+      "3": 0.2344
+    }
+  },
+  "method_note": "Readability uses an approximate syllable heuristic. NMF topics are exploratory patterns in three speeches, not objective historical themes or evidence of intent.",
+  "responsible_use": "Lexical counts, similarity, readability, and topics do not establish ideology, truthfulness, policy effect, or speaker intent."
+}

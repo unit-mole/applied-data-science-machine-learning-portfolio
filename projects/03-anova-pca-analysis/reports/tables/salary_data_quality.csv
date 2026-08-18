@@ -1,0 +1,4 @@
+column,dtype,missing_count,missing_percent,unique_values,constant
+Education,object,0,0.0,3,False
+Occupation,object,0,0.0,4,False
+Salary,int64,0,0.0,40,False

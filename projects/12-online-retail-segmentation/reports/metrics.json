@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "source_rows": 541909,
+    "valid_purchase_rows": 392692,
+    "exact_duplicates_excluded": 5268,
+    "cancelled_rows": 9288,
+    "rows_missing_customer_id": 135080,
+    "customers_segmented": 4338,
+    "snapshot_date": "2011-12-10"
+  },
+  "feature_engineering": {
+    "unit": "CustomerID",
+    "features": [
+      "recency_days",
+      "unique_purchase_invoices",
+      "net_positive_purchase_revenue"
+    ],
+    "transformation": "log1p then standardization"
+  },
+  "model_selection": {
+    "methods": [
+      "K-means",
+      "Gaussian mixture"
+    ],
+    "candidate_clusters": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "selection_rule": "composite rank among K-means candidates with >=5% smallest segment and >=0.80 seed ARI",
+    "selected_clusters": 2,
+    "selected_silhouette": 0.4323284246768482,
+    "selected_davies_bouldin": 0.8924990931024944,
+    "selected_calinski_harabasz": 4367.323097619211,
+    "selected_seed_stability_ari": 0.9990752738031528
+  },
+  "outlier_sensitivity": {
+    "winsorized_at_99_percent_ari_vs_primary": 0.9852570608898947
+  },
+  "segment_profiles": [
+    {
+      "cluster": 0,
+      "customers": 2672,
+      "median_recency": 96.0,
+      "median_frequency": 1.0,
+      "median_monetary": 363.075,
+      "total_revenue": 1324229.693,
+      "portfolio_share": 0.616,
+      "segment_name": "Occasional low-value customers"
+    },
+    {
+      "cluster": 1,
+      "customers": 1666,
+      "median_recency": 16.0,
+      "median_frequency": 6.0,
+      "median_monetary": 2061.075,
+      "total_revenue": 7562979.201,
+      "portfolio_share": 0.384,
+      "segment_name": "High-value loyal customers"
+    }
+  ],
+  "responsible_use": "Segments describe historical purchasing behavior and must not support discriminatory pricing, credit decisions, or sensitive profiling."
+}

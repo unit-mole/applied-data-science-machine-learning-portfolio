@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "wholesale_rows": 440,
+    "survey_rows": 62,
+    "shingle_rows": 36,
+    "total_missing_cells": 5,
+    "duplicate_rows_across_inputs": 0
+  },
+  "wholesale": {
+    "highest_total_spend_channel": "Hotel",
+    "highest_total_spend_region": "Other",
+    "most_variable_category_by_cv": "Delicatessen",
+    "category_channel_tests": [
+      {
+        "measure": "Fresh",
+        "channel_1": "Hotel",
+        "channel_2": "Retail",
+        "mean_difference": 4571.236459022592,
+        "cohen_d": 0.3663067386379002,
+        "welch_p_value": 3.997523791114212e-05,
+        "mann_whitney_p_value": 0.0001836887271000237,
+        "holm_adjusted_welch_p": 7.995047582228423e-05
+      },
+      {
+        "measure": "Milk",
+        "channel_1": "Hotel",
+        "channel_2": "Retail",
+        "mean_difference": -7264.775167785235,
+        "cohen_d": -1.1077910239007598,
+        "welch_p_value": 7.513432722470976e-15,
+        "mann_whitney_p_value": 7.711743336746381e-38,
+        "holm_adjusted_welch_p": 3.756716361235488e-14
+      },
+      {
+        "measure": "Grocery",
+        "channel_1": "Hotel",
+        "channel_2": "Retail",
+        "mean_difference": -12360.71452878344,
+        "cohen_d": -1.6376703694852175,
+        "welch_p_value": 3.623878362357256e-23,
+        "mann_whitney_p_value": 6.636783378791319e-50,
+        "holm_adjusted_welch_p": 2.1743270174143535e-22
+      },
+      {
+        "measure": "Frozen",
+        "channel_1": "Hotel",
+        "channel_2": "Retail",
+        "mean_difference": 2095.639001796011,
+        "cohen_d": 0.4402625858245457,
+        "welch_p_value": 1.265927476458512e-08,
+        "mann_whitney_p_value": 7.401600815246801e-07,
+        "holm_adjusted_welch_p": 3.797782429375536e-08
+      },
+      {
+        "measure": "Detergents_Paper",
+        "channel_1": "Hotel",
+        "channel_2": "Retail",
+        "mean_difference": -6478.946639568957,
+        "cohen_d": -1.758960546177002,
+        "welch_p_value": 5.809315111445474e-24,
+        "mann_whitney_p_value": 4.590926589964873e-55,
+        "holm_adjusted_welch_p": 4.0665205780118315e-23
+      },
+      {
+        "measure": "Delicatessen",
+        "channel_1": "Hotel",
+        "channel_2": "Retail",
+        "mean_difference": -337.4802438793838,
+        "cohen_d": -0.11972092097250434,
+        "welch_p_value": 0.16947545890793156,
+        "mann_whitney_p_value": 0.0005495079248668864,
+        "holm_adjusted_welch_p": 0.16947545890793156
+      },
+      {
+        "measure": "total_spend",
+        "channel_1": "Hotel",
+        "channel_2": "Retail",
+        "mean_difference": -19775.041119198413,
+        "cohen_d": -0.8004211557576746,
+        "welch_p_value": 1.505897739054145e-11,
+        "mann_whitney_p_value": 1.7275512983187055e-24,
+        "holm_adjusted_welch_p": 6.02359095621658e-11
+      }
+    ]
+  },
+  "survey_gender_major": {
+    "chi_square": 7.084844866036089,
+    "p_value": 0.42009968345511806,
+    "degrees_of_freedom": 7,
+    "cramers_v": 0.3380409611092698,
+    "expected_cells_below_5": 11,
+    "assumption_warning": true
+  },
+  "shingles": {
+    "specification_limit": 0.35,
+    "one_sample_results": {
+      "A": {
+        "n": 36,
+        "sample_mean": 0.31666666666666665,
+        "sample_std": 0.1357308260597317,
+        "mean_95_percent_ci": [
+          0.2707419623180284,
+          0.3625913710153049
+        ],
+        "one_sided_t_statistic": -1.4735046253382782,
+        "one_sided_t_p_value": 0.07477633144907507,
+        "standardized_effect_vs_limit": -0.24558410422304638,
+        "wilcoxon_signed_rank_p_value": 0.03789070176405447
+      },
+      "B": {
+        "n": 31,
+        "sample_mean": 0.2735483870967742,
+        "sample_std": 0.13729647694185443,
+        "mean_95_percent_ci": [
+          0.2231876327736467,
+          0.32390914141990174
+        ],
+        "one_sided_t_statistic": -3.1003313069986995,
+        "one_sided_t_p_value": 0.0020904774003191783,
+        "standardized_effect_vs_limit": -0.5568359407765672,
+        "wilcoxon_signed_rank_p_value": 0.00303315919594635
+      }
+    },
+    "welch_a_vs_b": {
+      "t_statistic": 1.2885080295255027,
+      "p_value": 0.20225822050217807,
+      "cohen_d": 0.31598746111618203
+    }
+  },
+  "limitations": "The survey and shingle collection designs are undocumented; inferential results apply only under independence and sampling assumptions that cannot be fully verified."
+}

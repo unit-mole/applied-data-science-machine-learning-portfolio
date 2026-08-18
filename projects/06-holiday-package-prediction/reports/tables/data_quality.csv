@@ -1,0 +1,9 @@
+column,dtype,missing_count,missing_percent,unique_values,constant
+Unnamed: 0,int64,0,0.0,872,False
+Holliday_Package,object,0,0.0,2,False
+Salary,int64,0,0.0,864,False
+age,int64,0,0.0,43,False
+educ,int64,0,0.0,20,False
+no_young_children,int64,0,0.0,4,False
+no_older_children,int64,0,0.0,7,False
+foreign,object,0,0.0,2,False

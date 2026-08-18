@@ -1,0 +1,215 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "salary_rows": 40,
+    "salary_groups": {
+      "education": 3,
+      "occupation": 4
+    },
+    "college_rows": 777,
+    "college_numeric_features": 17,
+    "missing_cells": 0
+  },
+  "salary_inference": {
+    "education": {
+      "classic_anova_f": 30.95628008792558,
+      "classic_anova_p": 1.2577090926628999e-08,
+      "welch_anova_f": 62.15932412425136,
+      "welch_anova_p": 2.452030538647869e-10,
+      "kruskal_h": 22.798099593495948,
+      "kruskal_p": 1.1206127884422072e-05,
+      "levene_p": 0.1668642569930117,
+      "eta_squared": 0.6259322381887624
+    },
+    "occupation": {
+      "classic_anova_f": 0.8841441289216039,
+      "classic_anova_p": 0.45850782664951206,
+      "welch_anova_f": 3.2397208877808295,
+      "welch_anova_p": 0.0441995980084241,
+      "kruskal_h": 2.910187617260803,
+      "kruskal_p": 0.4056807658261632,
+      "levene_p": 0.08037907149750646,
+      "eta_squared": 0.06862265122732734
+    },
+    "education_occupation_interaction": {
+      "f_statistic": 9.909462906304293,
+      "p_value": 1.3233705988664385e-05,
+      "numerator_df": 5,
+      "denominator_df": 29
+    },
+    "additive_model_residual_shapiro_p": 0.09013339840992227,
+    "pairwise_tests": [
+      {
+        "field": "Education",
+        "group_1": " Bachelors",
+        "group_2": " Doctorate",
+        "mean_difference": -43274.06666666668,
+        "cohen_d": -0.9657767311141943,
+        "welch_p_value": 0.012112591381680877,
+        "holm_adjusted_p_value": 0.012112591381680877
+      },
+      {
+        "field": "Education",
+        "group_1": " Bachelors",
+        "group_2": " HS-grad",
+        "mean_difference": 90114.15555555554,
+        "cohen_d": 2.3077082878722535,
+        "welch_p_value": 1.9102503945234697e-06,
+        "holm_adjusted_p_value": 3.8205007890469395e-06
+      },
+      {
+        "field": "Education",
+        "group_1": " Doctorate",
+        "group_2": " HS-grad",
+        "mean_difference": 133388.22222222222,
+        "cohen_d": 3.634764486216764,
+        "welch_p_value": 3.556562461745683e-10,
+        "holm_adjusted_p_value": 1.066968738523705e-09
+      },
+      {
+        "field": "Occupation",
+        "group_1": " Adm-clerical",
+        "group_2": " Exec-managerial",
+        "mean_difference": -55693.30000000002,
+        "cohen_d": -1.271045828260186,
+        "welch_p_value": 0.010616001135506809,
+        "holm_adjusted_p_value": 0.06369600681304086
+      },
+      {
+        "field": "Occupation",
+        "group_1": " Adm-clerical",
+        "group_2": " Prof-specialty",
+        "mean_difference": -27528.853846153856,
+        "cohen_d": -0.4115675696015417,
+        "welch_p_value": 0.31385954407831473,
+        "holm_adjusted_p_value": 0.9825170612882395
+      },
+      {
+        "field": "Occupation",
+        "group_1": " Adm-clerical",
+        "group_2": " Sales",
+        "mean_difference": -16180.116666666669,
+        "cohen_d": -0.25552755959252405,
+        "welch_p_value": 0.5448340765981032,
+        "holm_adjusted_p_value": 1.0
+      },
+      {
+        "field": "Occupation",
+        "group_1": " Exec-managerial",
+        "group_2": " Prof-specialty",
+        "mean_difference": 28164.446153846162,
+        "cohen_d": 0.4180555702933209,
+        "welch_p_value": 0.24562926532205986,
+        "holm_adjusted_p_value": 0.9825170612882395
+      },
+      {
+        "field": "Occupation",
+        "group_1": " Exec-managerial",
+        "group_2": " Sales",
+        "mean_difference": 39513.18333333335,
+        "cohen_d": 0.6308025847334873,
+        "welch_p_value": 0.10539078504091845,
+        "holm_adjusted_p_value": 0.5269539252045923
+      },
+      {
+        "field": "Occupation",
+        "group_1": " Prof-specialty",
+        "group_2": " Sales",
+        "mean_difference": 11348.737179487187,
+        "cohen_d": 0.1522161187126228,
+        "welch_p_value": 0.7065105583834974,
+        "holm_adjusted_p_value": 1.0
+      }
+    ]
+  },
+  "pca": {
+    "standardized": true,
+    "components_for_80_percent": 6,
+    "components_for_90_percent": 9,
+    "first_three_explained_variance": [
+      0.3202062819886916,
+      0.2634021443611249,
+      0.06900916554222482
+    ],
+    "reconstruction_rmse_at_80_percent_components": 0.42827731113092665,
+    "top_loadings": [
+      {
+        "component": "PC1",
+        "feature": "Top10perc",
+        "loading": 0.3542739474699039
+      },
+      {
+        "component": "PC1",
+        "feature": "Top25perc",
+        "loading": 0.3440012790682696
+      },
+      {
+        "component": "PC1",
+        "feature": "Expend",
+        "loading": 0.3189087503562584
+      },
+      {
+        "component": "PC1",
+        "feature": "PhD",
+        "loading": 0.31831287489467625
+      },
+      {
+        "component": "PC1",
+        "feature": "Terminal",
+        "loading": 0.31705601617109136
+      },
+      {
+        "component": "PC2",
+        "feature": "F.Undergrad",
+        "loading": 0.41767377422521895
+      },
+      {
+        "component": "PC2",
+        "feature": "Enroll",
+        "loading": 0.40372425211028395
+      },
+      {
+        "component": "PC2",
+        "feature": "Accept",
+        "loading": 0.3721167498518506
+      },
+      {
+        "component": "PC2",
+        "feature": "Apps",
+        "loading": 0.3315982273621418
+      },
+      {
+        "component": "PC2",
+        "feature": "P.Undergrad",
+        "loading": 0.31508783004902635
+      },
+      {
+        "component": "PC3",
+        "feature": "Books",
+        "loading": 0.6774116491332316
+      },
+      {
+        "component": "PC3",
+        "feature": "Personal",
+        "loading": 0.4997211195634123
+      },
+      {
+        "component": "PC3",
+        "feature": "S.F.Ratio",
+        "loading": -0.28984840143180346
+      },
+      {
+        "component": "PC3",
+        "feature": "Expend",
+        "loading": 0.22674398489365286
+      },
+      {
+        "component": "PC3",
+        "feature": "Grad.Rate",
+        "loading": -0.20806464942201222
+      }
+    ],
+    "extreme_score_rows_above_99th_percentile": 8
+  },
+  "limitation": "The salary sample has only 40 observational records; robust alternatives and corrected pairwise tests reduce but do not eliminate small-sample and design limitations."
+}

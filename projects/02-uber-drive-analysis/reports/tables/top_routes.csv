@@ -1,0 +1,16 @@
+route,trips,miles
+Unknown Location → Unknown Location,86,1360.8
+Morrisville → Cary,75,395.7
+Cary → Morrisville,67,380.0
+Cary → Cary,53,255.9
+Cary → Durham,36,390.0
+Durham → Cary,31,324.5
+Islamabad → Unknown Location,28,267.0
+Unknown Location → Islamabad,28,243.8
+Lahore → Lahore,27,97.0
+Islamabad → Islamabad,25,95.30000000000001
+Cary → Raleigh,23,336.5
+Karachi → Karachi,22,74.8
+Raleigh → Cary,21,365.7
+Westpark Place → Whitebridge,16,32.9
+Cary → Apex,14,82.6

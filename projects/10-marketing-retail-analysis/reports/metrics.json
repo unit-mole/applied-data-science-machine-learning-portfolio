@@ -1,0 +1,167 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "source_rows": 145830,
+    "exact_duplicates_removed": 680,
+    "valid_rows": 145150,
+    "invalid_rows_removed": 0,
+    "distinct_bills": 69982,
+    "distinct_items": 580,
+    "date_min": "2010-04-01",
+    "date_max": "2011-03-31"
+  },
+  "business_summary": {
+    "recorded_revenue": 32654639.75,
+    "average_order_value": 466.6148402446343,
+    "median_order_value": 389.82,
+    "highest_revenue_category": "TOBACCO",
+    "highest_revenue_daypart": "Evening",
+    "top_items_by_revenue": {
+      "NIRVANA HOOKAH SINGLE         ": 2898744.0,
+      "SAMBUCA                       ": 2289870.0,
+      "MINT FLAVOUR SINGLE           ": 1838851.0,
+      "CALCUTTA MINT                 ": 1634326.4,
+      "N R G  HOOKAH                 ": 1183511.4,
+      "GREAT LAKES SHAKE                   ": 840269.59,
+      "GREEN APPLE FLAVOUR SINGLE    ": 793683.0,
+      "JR.CHL AVALANCHE              ": 712179.6,
+      "SILVER APPLE SINGLE           ": 673525.2,
+      "POUTINE WITH FRIES            ": 575284.5599999999
+    }
+  },
+  "basket_analysis": {
+    "method": "bill-level pair co-occurrence",
+    "minimum_joint_bills": 20,
+    "top_pairs_by_lift": [
+      {
+        "item_1": "ADD FRIES                     ",
+        "item_2": "B.M.T. PANINI                 ",
+        "joint_bills": 151,
+        "support": 0.0021576976936926637,
+        "confidence_1_to_2": 0.2007978723404255,
+        "confidence_2_to_1": 0.05796545105566219,
+        "lift": 5.394332707150733
+      },
+      {
+        "item_1": "B.M.T. PANINI                 ",
+        "item_2": "MAGGI NDL ARRABIATA           ",
+        "joint_bills": 134,
+        "support": 0.0019147780857934897,
+        "confidence_1_to_2": 0.05143953934740883,
+        "confidence_2_to_1": 0.15209988649262202,
+        "lift": 4.086086086958416
+      },
+      {
+        "item_1": "RED BULL 2+1                  ",
+        "item_2": "SAMBUCA                       ",
+        "joint_bills": 290,
+        "support": 0.00414392272298591,
+        "confidence_1_to_2": 0.24850042844901452,
+        "confidence_2_to_1": 0.06556635767578567,
+        "lift": 3.9318464806056825
+      },
+      {
+        "item_1": "MAGGI NDL ARRABIATA           ",
+        "item_2": "SAMBUCA                       ",
+        "joint_bills": 175,
+        "support": 0.0025006430224914977,
+        "confidence_1_to_2": 0.19863791146424517,
+        "confidence_2_to_1": 0.03956590549400859,
+        "lift": 3.142907149014426
+      },
+      {
+        "item_1": "CALCUTTA MINT                 ",
+        "item_2": "RED BULL 2+1                  ",
+        "joint_bills": 166,
+        "support": 0.002372038524191935,
+        "confidence_1_to_2": 0.05019655276685818,
+        "confidence_2_to_1": 0.14224507283633245,
+        "lift": 3.0101586595803504
+      },
+      {
+        "item_1": "B.M.T. PANINI                 ",
+        "item_2": "PHILLYCREAM CHEESE &CHILLY PAN",
+        "joint_bills": 183,
+        "support": 0.002614958132091109,
+        "confidence_1_to_2": 0.07024952015355086,
+        "confidence_2_to_1": 0.09838709677419354,
+        "lift": 2.64311931149774
+      },
+      {
+        "item_1": "RED BULL ENERGY DRINK         ",
+        "item_2": "SAMBUCA                       ",
+        "joint_bills": 283,
+        "support": 0.004043897002086251,
+        "confidence_1_to_2": 0.15215053763440858,
+        "confidence_2_to_1": 0.06398372145602532,
+        "lift": 2.4073703198578302
+      },
+      {
+        "item_1": "N R G  HOOKAH                 ",
+        "item_2": "RED BULL ENERGY DRINK         ",
+        "joint_bills": 141,
+        "support": 0.0020148038066931497,
+        "confidence_1_to_2": 0.06308724832214765,
+        "confidence_2_to_1": 0.07580645161290323,
+        "lift": 2.3736407591830844
+      },
+      {
+        "item_1": "B.M.T. PANINI                 ",
+        "item_2": "KIT KAT SHAKE                 ",
+        "joint_bills": 148,
+        "support": 0.0021148295275928096,
+        "confidence_1_to_2": 0.05681381957773513,
+        "confidence_2_to_1": 0.08814770696843359,
+        "lift": 2.368043312500929
+      },
+      {
+        "item_1": "B.M.T. PANINI                 ",
+        "item_2": "COTTAGE CHEESE PANINI         ",
+        "joint_bills": 141,
+        "support": 0.0020148038066931497,
+        "confidence_1_to_2": 0.05412667946257198,
+        "confidence_2_to_1": 0.08746898263027295,
+        "lift": 2.3498097283807144
+      }
+    ],
+    "caution": "Association does not establish promotion lift; frequent items can dominate support."
+  },
+  "menu_item_segmentation": {
+    "features": [
+      "revenue",
+      "units",
+      "bills",
+      "median_rate",
+      "median_line_total"
+    ],
+    "candidate_clusters": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "selected_clusters": 2,
+    "selected_silhouette": 0.39529437024474867,
+    "selected_stability_ari": 1.0,
+    "profiles": [
+      {
+        "cluster": 0,
+        "items": 310,
+        "median_revenue": 22472.559999999998,
+        "median_units": 133.0,
+        "median_bills": 124.0,
+        "median_rate": 125.0
+      },
+      {
+        "cluster": 1,
+        "items": 270,
+        "median_revenue": 1521.0,
+        "median_units": 6.0,
+        "median_bills": 5.0,
+        "median_rate": 205.0
+      }
+    ]
+  },
+  "limitation": "There is no customer identifier, so customer-level RFM, retention, and lifetime-value claims are not possible from this dataset."
+}

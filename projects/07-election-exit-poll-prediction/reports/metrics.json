@@ -1,0 +1,157 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "rows": 1525,
+    "columns": 10,
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "labour_share": 0.6970491803278689
+  },
+  "validation": {
+    "training_rows": 1143,
+    "untouched_test_rows": 382,
+    "selection": "5-fold stratified CV on training only",
+    "selection_metric": "ROC-AUC",
+    "random_seed": 42
+  },
+  "candidate_models": [
+    {
+      "model": "random_forest",
+      "cv_roc_auc_mean": 0.8820572906493744,
+      "cv_roc_auc_std": 0.025791283325202648,
+      "cv_balanced_accuracy_mean": 0.803019063244658,
+      "cv_f1_mean": 0.8632021896404316
+    },
+    {
+      "model": "linear_discriminant_analysis",
+      "cv_roc_auc_mean": 0.8810886818495514,
+      "cv_roc_auc_std": 0.016882862629020643,
+      "cv_balanced_accuracy_mean": 0.783161573694285,
+      "cv_f1_mean": 0.8788955556668512
+    },
+    {
+      "model": "support_vector_machine",
+      "cv_roc_auc_mean": 0.879713432816386,
+      "cv_roc_auc_std": 0.029458341816838044,
+      "cv_balanced_accuracy_mean": 0.8138739062072737,
+      "cv_f1_mean": 0.8597834418249256
+    },
+    {
+      "model": "logistic_regression",
+      "cv_roc_auc_mean": 0.8789528074013306,
+      "cv_roc_auc_std": 0.017410906593882506,
+      "cv_balanced_accuracy_mean": 0.8078424938474159,
+      "cv_f1_mean": 0.8549035435036171
+    },
+    {
+      "model": "knn",
+      "cv_roc_auc_mean": 0.8723019291118141,
+      "cv_roc_auc_std": 0.027870866818828742,
+      "cv_balanced_accuracy_mean": 0.7758076487362787,
+      "cv_f1_mean": 0.8771133676132653
+    },
+    {
+      "model": "dummy_majority",
+      "cv_roc_auc_mean": 0.5,
+      "cv_roc_auc_std": 0.0,
+      "cv_balanced_accuracy_mean": 0.5,
+      "cv_f1_mean": 0.8216485395034923
+    }
+  ],
+  "selected_model": "random_forest",
+  "test_metrics": {
+    "roc_auc": 0.9069224786103189,
+    "pr_auc": 0.950848376007488,
+    "balanced_accuracy": 0.7997148042520094,
+    "precision": 0.8705035971223022,
+    "recall_sensitivity": 0.9097744360902256,
+    "specificity": 0.6896551724137931,
+    "f1": 0.8897058823529411,
+    "brier_score": 0.10810542087383816,
+    "true_negatives": 80,
+    "false_positives": 36,
+    "false_negatives": 24,
+    "true_positives": 242
+  },
+  "top_permutation_features": [
+    {
+      "feature": "Hague",
+      "importance": 0.07855117319159971,
+      "importance_std": 0.015982899283794188
+    },
+    {
+      "feature": "Europe",
+      "importance": 0.06433027612133788,
+      "importance_std": 0.013762374966103481
+    },
+    {
+      "feature": "Blair",
+      "importance": 0.05883458646616545,
+      "importance_std": 0.01260584196539954
+    },
+    {
+      "feature": "political.knowledge",
+      "importance": 0.030948599948146277,
+      "importance_std": 0.004880519777186557
+    },
+    {
+      "feature": "age",
+      "importance": 0.009706378014000528,
+      "importance_std": 0.005729114072554374
+    },
+    {
+      "feature": "economic.cond.national",
+      "importance": 0.008709813326419546,
+      "importance_std": 0.0031050909297940282
+    },
+    {
+      "feature": "gender",
+      "importance": 0.0021373476795437272,
+      "importance_std": 0.0011272641353189696
+    },
+    {
+      "feature": "economic.cond.household",
+      "importance": 0.00017824734249424212,
+      "importance_std": 0.0015654900722727027
+    }
+  ],
+  "subgroup_sensitivity": [
+    {
+      "field": "gender",
+      "group": "female",
+      "rows": 202,
+      "accuracy": 0.8415841584158416,
+      "labour_share": 0.6633663366336634
+    },
+    {
+      "field": "gender",
+      "group": "male",
+      "rows": 180,
+      "accuracy": 0.8444444444444444,
+      "labour_share": 0.7333333333333333
+    },
+    {
+      "field": "age_group",
+      "group": "18-34",
+      "rows": 48,
+      "accuracy": 0.8541666666666666,
+      "labour_share": 0.7916666666666666
+    },
+    {
+      "field": "age_group",
+      "group": "35-54",
+      "rows": 162,
+      "accuracy": 0.8580246913580247,
+      "labour_share": 0.7160493827160493
+    },
+    {
+      "field": "age_group",
+      "group": "55+",
+      "rows": 172,
+      "accuracy": 0.8255813953488372,
+      "labour_share": 0.6511627906976745
+    }
+  ],
+  "interpretation": "This is retrospective respondent classification, not vote-share estimation, polling, persuasion, or seat forecasting.",
+  "responsible_use": "The undocumented sampling and weighting design prevents representative election inference or future-election claims."
+}

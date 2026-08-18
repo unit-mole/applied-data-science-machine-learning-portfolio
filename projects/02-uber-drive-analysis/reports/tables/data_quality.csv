@@ -1,0 +1,8 @@
+column,dtype,missing_count,missing_percent,unique_values,constant
+START_DATE*,object,0,0.0,1154,False
+END_DATE*,object,0,0.0,1154,False
+CATEGORY*,object,0,0.0,2,False
+START*,object,0,0.0,176,False
+STOP*,object,0,0.0,187,False
+MILES*,float64,0,0.0,256,False
+PURPOSE*,object,502,43.463,11,False

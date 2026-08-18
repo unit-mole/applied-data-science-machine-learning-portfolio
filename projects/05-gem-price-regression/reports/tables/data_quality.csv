@@ -1,0 +1,12 @@
+column,dtype,missing_count,missing_percent,unique_values,constant
+Unnamed: 0,int64,0,0.0,26967,False
+carat,float64,0,0.0,257,False
+cut,object,0,0.0,5,False
+color,object,0,0.0,7,False
+clarity,object,0,0.0,8,False
+depth,float64,697,2.585,170,False
+table,float64,0,0.0,112,False
+x,float64,0,0.0,531,False
+y,float64,0,0.0,526,False
+z,float64,0,0.0,356,False
+price,int64,0,0.0,8742,False

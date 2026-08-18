@@ -1,0 +1,8 @@
+reason,rows
+source rows,541909
+exact duplicates,5268
+cancelled invoices,9288
+missing customer ID,135080
+nonpositive quantity,10624
+nonpositive price,2517
+valid purchase rows,392692

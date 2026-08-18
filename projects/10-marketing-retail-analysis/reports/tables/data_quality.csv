@@ -1,0 +1,11 @@
+column,dtype,missing_count,missing_percent,unique_values,constant
+Date,datetime64[ns],0,0.0,365,False
+Bill Number ,object,0,0.0,69982,False
+Item Desc,object,0,0.0,580,False
+Time,object,0,0.0,36200,False
+Quantity,int64,0,0.0,20,False
+Rate,float64,0,0.0,134,False
+Tax,float64,0,0.0,445,False
+Discount,float64,0,0.0,111,False
+Total,float64,0,0.0,470,False
+Category,object,0,0.0,9,False

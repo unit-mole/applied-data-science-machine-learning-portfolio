@@ -1,0 +1,144 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "rose_observations": 187,
+    "rose_missing_values": 2,
+    "sparkling_observations": 187,
+    "sparkling_missing_values": 0,
+    "start_month": "1980-01-01",
+    "end_month": "1995-07-01",
+    "monthly_frequency_gaps_after_reindex": 0
+  },
+  "validation": {
+    "model_selection": "three rolling-origin 12-month validation windows",
+    "final_holdout": "last 24 months, untouched during selection",
+    "missing_rose_values": "linear interpolation within the series; neither missing record is in the final holdout"
+  },
+  "products": {
+    "rose": {
+      "selected_model": "trend_plus_month",
+      "rolling_origin_candidates": [
+        {
+          "model": "trend_plus_month",
+          "mean_rmse": 12.372317093276779,
+          "std_rmse": 2.0824218353549,
+          "mean_mae": 9.469773186386247,
+          "mean_mape_percent": 14.751996473207234
+        },
+        {
+          "model": "seasonal_naive",
+          "mean_rmse": 13.928126466968152,
+          "std_rmse": 3.841996835008046,
+          "mean_mae": 11.777777777777779,
+          "mean_mape_percent": 20.021109136960593
+        },
+        {
+          "model": "holt_winters__0.2_0.05_0.2",
+          "mean_rmse": 14.947443130449903,
+          "std_rmse": 3.6576651699656746,
+          "mean_mae": 12.441329354296457,
+          "mean_mape_percent": 19.596919712075437
+        },
+        {
+          "model": "holt_winters__0.3_0.1_0.3",
+          "mean_rmse": 16.216578167746412,
+          "std_rmse": 6.590118554831223,
+          "mean_mae": 14.475192577213754,
+          "mean_mape_percent": 23.97876757353905
+        },
+        {
+          "model": "ridge_lag_1_12",
+          "mean_rmse": 16.33556027789511,
+          "std_rmse": 2.7777523272676685,
+          "mean_mae": 15.176329743394001,
+          "mean_mape_percent": 28.150877041671844
+        },
+        {
+          "model": "holt_winters__0.5_0.1_0.2",
+          "mean_rmse": 29.764521949775343,
+          "std_rmse": 11.1447202762361,
+          "mean_mae": 27.031050697585865,
+          "mean_mape_percent": 46.381236247681095
+        }
+      ],
+      "final_holdout_metrics": {
+        "mae": 10.464110889110898,
+        "rmse": 13.564981814422381,
+        "r_squared": -0.08040355635347773,
+        "mape_percent": 21.66621179672109
+      },
+      "diagnostic_interval": {
+        "radius": 21.339534883720944,
+        "coverage": 0.9166666666666666
+      },
+      "residual_ljung_box": {
+        "lags": 12,
+        "q_statistic": 13.311138949920654,
+        "p_value": 0.34683723715662457
+      }
+    },
+    "sparkling": {
+      "selected_model": "holt_winters__0.2_0.05_0.2",
+      "rolling_origin_candidates": [
+        {
+          "model": "holt_winters__0.2_0.05_0.2",
+          "mean_rmse": 281.70816097991815,
+          "std_rmse": 76.03349803435846,
+          "mean_mae": 215.10410106534835,
+          "mean_mape_percent": 10.739363265243432
+        },
+        {
+          "model": "seasonal_naive",
+          "mean_rmse": 305.8768410203475,
+          "std_rmse": 128.42100240142275,
+          "mean_mae": 240.7222222222222,
+          "mean_mape_percent": 10.78131141353587
+        },
+        {
+          "model": "ridge_lag_1_12",
+          "mean_rmse": 310.88287836803374,
+          "std_rmse": 108.30784564815319,
+          "mean_mae": 246.3552892761911,
+          "mean_mape_percent": 11.110579714877332
+        },
+        {
+          "model": "trend_plus_month",
+          "mean_rmse": 336.4336361463695,
+          "std_rmse": 66.06523889033859,
+          "mean_mae": 236.96803501606271,
+          "mean_mape_percent": 12.379141614963231
+        },
+        {
+          "model": "holt_winters__0.3_0.1_0.3",
+          "mean_rmse": 338.9042021512046,
+          "std_rmse": 87.45990727039361,
+          "mean_mae": 269.1904502287878,
+          "mean_mape_percent": 12.96904972054658
+        },
+        {
+          "model": "holt_winters__0.5_0.1_0.2",
+          "mean_rmse": 364.38526788922917,
+          "std_rmse": 178.36337795703997,
+          "mean_mae": 297.20971550094697,
+          "mean_mape_percent": 13.20046882543891
+        }
+      ],
+      "final_holdout_metrics": {
+        "mae": 279.1508662661811,
+        "rmse": 358.6845480613967,
+        "r_squared": 0.9324659914171232,
+        "mape_percent": 14.981933341458099
+      },
+      "diagnostic_interval": {
+        "radius": 508.73563950701237,
+        "coverage": 0.75
+      },
+      "residual_ljung_box": {
+        "lags": 12,
+        "q_statistic": 9.811978558774253,
+        "p_value": 0.6324515641411514
+      }
+    }
+  },
+  "limitation": "The series ends in 1995 and lacks price, promotion, inventory, weather, and economic drivers; diagnostic intervals are empirical validation-error bands rather than formal probabilistic intervals."
+}

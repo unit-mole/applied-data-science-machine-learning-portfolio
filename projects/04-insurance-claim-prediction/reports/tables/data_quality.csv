@@ -1,0 +1,11 @@
+column,dtype,missing_count,missing_percent,unique_values
+Age,int64,0,0.0,70
+Agency_Code,object,0,0.0,4
+Type,object,0,0.0,2
+Claimed,object,0,0.0,2
+Commision,float64,0,0.0,324
+Channel,object,0,0.0,2
+Duration,int64,0,0.0,257
+Sales,float64,0,0.0,380
+Product Name,object,0,0.0,5
+Destination,object,0,0.0,3

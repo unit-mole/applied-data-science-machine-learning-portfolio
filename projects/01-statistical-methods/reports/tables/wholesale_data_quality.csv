@@ -1,0 +1,10 @@
+column,dtype,missing_count,missing_percent,unique_values,constant
+Buyer/Spender,int64,0,0.0,440,False
+Channel,object,0,0.0,2,False
+Region,object,0,0.0,3,False
+Fresh,int64,0,0.0,433,False
+Milk,int64,0,0.0,421,False
+Grocery,int64,0,0.0,430,False
+Frozen,int64,0,0.0,426,False
+Detergents_Paper,int64,0,0.0,417,False
+Delicatessen,int64,0,0.0,403,False

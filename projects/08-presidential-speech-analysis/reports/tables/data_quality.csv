@@ -1,0 +1,7 @@
+document,column,dtype,missing_count,missing_percent,unique_values,constant
+Roosevelt 1941,Name,object,0,0.0,1,True
+Roosevelt 1941,Speech,object,0,0.0,1,True
+Kennedy 1961,Name,object,0,0.0,1,True
+Kennedy 1961,Speech,object,0,0.0,1,True
+Nixon 1973,Name,object,0,0.0,1,True
+Nixon 1973,Speech,object,0,0.0,1,True

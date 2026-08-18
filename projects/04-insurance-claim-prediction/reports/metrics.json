@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "raw_rows": 3000,
+    "exact_duplicates_removed": 139,
+    "modeling_rows": 2861,
+    "missing_cells": 0,
+    "claim_prevalence": 0.31946871723173714
+  },
+  "validation": {
+    "train_rows": 2145,
+    "untouched_test_rows": 716,
+    "test_fraction": 0.25,
+    "selection_cv": "4-fold stratified CV on training data only",
+    "optimization_metric": "average precision (PR-AUC)",
+    "random_seed": 42
+  },
+  "candidate_models": [
+    {
+      "model": "random_forest_tuned",
+      "cv_pr_auc_mean": 0.6822448260999373,
+      "cv_pr_auc_std": null,
+      "cv_roc_auc_mean": null,
+      "cv_balanced_accuracy_mean": null,
+      "selection_stage": "randomized_search_8_candidates"
+    },
+    {
+      "model": "random_forest",
+      "cv_pr_auc_mean": 0.6715063454876791,
+      "cv_pr_auc_std": 0.03675979693281957,
+      "cv_roc_auc_mean": 0.810854471383407,
+      "cv_balanced_accuracy_mean": 0.7411479262960416,
+      "selection_stage": "candidate"
+    },
+    {
+      "model": "logistic_regression",
+      "cv_pr_auc_mean": 0.6710068827014635,
+      "cv_pr_auc_std": 0.05799547605136977,
+      "cv_roc_auc_mean": 0.810319930454255,
+      "cv_balanced_accuracy_mean": 0.7444627251201169,
+      "selection_stage": "candidate"
+    },
+    {
+      "model": "gradient_boosting",
+      "cv_pr_auc_mean": 0.66344832933383,
+      "cv_pr_auc_std": 0.04891895555668675,
+      "cv_roc_auc_mean": 0.8083514393528687,
+      "cv_balanced_accuracy_mean": 0.6990695368957596,
+      "selection_stage": "candidate"
+    },
+    {
+      "model": "mlp",
+      "cv_pr_auc_mean": 0.6538956887536429,
+      "cv_pr_auc_std": 0.07947205143391697,
+      "cv_roc_auc_mean": 0.7851411757199093,
+      "cv_balanced_accuracy_mean": 0.6804304318990105,
+      "selection_stage": "candidate"
+    },
+    {
+      "model": "decision_tree",
+      "cv_pr_auc_mean": 0.6238053354294826,
+      "cv_pr_auc_std": 0.05117624140842532,
+      "cv_roc_auc_mean": 0.7926436232345758,
+      "cv_balanced_accuracy_mean": 0.7210951428826926,
+      "selection_stage": "candidate"
+    },
+    {
+      "model": "dummy_prevalence",
+      "cv_pr_auc_mean": 0.31934687595541844,
+      "cv_pr_auc_std": 0.0006340504182995588,
+      "cv_roc_auc_mean": 0.5,
+      "cv_balanced_accuracy_mean": 0.5,
+      "selection_stage": "candidate"
+    }
+  ],
+  "tuning": {
+    "model": "random_forest",
+    "search": "8-candidate randomized search",
+    "best_parameters": {
+      "model__n_estimators": 500,
+      "model__min_samples_leaf": 8,
+      "model__max_features": "sqrt",
+      "model__max_depth": 10
+    }
+  },
+  "selected_model": "random_forest_tuned",
+  "selected_threshold_from_training_oof": 0.5000000000000001,
+  "test_metrics_default_threshold": {
+    "roc_auc": 0.799530141764479,
+    "pr_auc": 0.6178714434798155,
+    "balanced_accuracy": 0.7090106973449424,
+    "precision": 0.6795580110497238,
+    "recall_sensitivity": 0.537117903930131,
+    "specificity": 0.8809034907597536,
+    "f1": 0.6,
+    "brier_score": 0.16415617324970136,
+    "true_negatives": 429,
+    "false_positives": 58,
+    "false_negatives": 106,
+    "true_positives": 123
+  },
+  "test_metrics_selected_threshold": {
+    "roc_auc": 0.799530141764479,
+    "pr_auc": 0.6178714434798155,
+    "balanced_accuracy": 0.7090106973449424,
+    "precision": 0.6795580110497238,
+    "recall_sensitivity": 0.537117903930131,
+    "specificity": 0.8809034907597536,
+    "f1": 0.6,
+    "brier_score": 0.16415617324970136,
+    "true_negatives": 429,
+    "false_positives": 58,
+    "false_negatives": 106,
+    "true_positives": 123
+  },
+  "top_permutation_features": [
+    {
+      "feature": "Agency_Code",
+      "pr_auc_importance_mean": 0.0744462881968996,
+      "importance_std": 0.018691014069168985
+    },
+    {
+      "feature": "Product Name",
+      "pr_auc_importance_mean": 0.025453335075081924,
+      "importance_std": 0.0158576217031681
+    },
+    {
+      "feature": "Type",
+      "pr_auc_importance_mean": 0.013114299373081765,
+      "importance_std": 0.008101831844317427
+    },
+    {
+      "feature": "Sales",
+      "pr_auc_importance_mean": 0.012272681006876257,
+      "importance_std": 0.01833804379218728
+    },
+    {
+      "feature": "Destination",
+      "pr_auc_importance_mean": 0.002587834120047187,
+      "importance_std": 0.0019480723268699466
+    },
+    {
+      "feature": "Commision",
+      "pr_auc_importance_mean": 0.002098805207778535,
+      "importance_std": 0.017347557118005934
+    },
+    {
+      "feature": "Channel",
+      "pr_auc_importance_mean": 0.000244854196634577,
+      "importance_std": 0.00013485009659734194
+    },
+    {
+      "feature": "Age",
+      "pr_auc_importance_mean": -0.002375557384888103,
+      "importance_std": 0.0063335728350536625
+    },
+    {
+      "feature": "Duration",
+      "pr_auc_importance_mean": -0.0028431109306365776,
+      "importance_std": 0.011186026593520209
+    }
+  ],
+  "decision_note": "False negatives represent missed claimed policies; threshold selection maximized training out-of-fold F1 and was fixed before test evaluation.",
+  "responsible_use": "Educational model only; never use it to approve, deny, price, or investigate an insurance claim."
+}

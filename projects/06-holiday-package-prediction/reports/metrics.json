@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "rows": 872,
+    "columns": 8,
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "purchase_prevalence": 0.4598623853211009
+  },
+  "validation": {
+    "train_rows": 654,
+    "untouched_test_rows": 218,
+    "selection": "5-fold stratified CV on training data",
+    "selection_metric": "PR-AUC",
+    "random_seed": 42
+  },
+  "candidate_models": [
+    {
+      "model": "logistic_regression",
+      "cv_pr_auc_mean": 0.713628829706583,
+      "cv_pr_auc_std": 0.03185070309233309,
+      "cv_roc_auc_mean": 0.7240169981638465,
+      "cv_balanced_accuracy_mean": 0.6642166111422634
+    },
+    {
+      "model": "gradient_boosting",
+      "cv_pr_auc_mean": 0.7095833768745359,
+      "cv_pr_auc_std": 0.049854118688959434,
+      "cv_roc_auc_mean": 0.7364065430836384,
+      "cv_balanced_accuracy_mean": 0.6611147760882232
+    },
+    {
+      "model": "linear_discriminant_analysis",
+      "cv_pr_auc_mean": 0.7079817788646672,
+      "cv_pr_auc_std": 0.031061389249584605,
+      "cv_roc_auc_mean": 0.7209671361502348,
+      "cv_balanced_accuracy_mean": 0.6576429615947049
+    },
+    {
+      "model": "random_forest",
+      "cv_pr_auc_mean": 0.6992603645983386,
+      "cv_pr_auc_std": 0.042513761052422196,
+      "cv_roc_auc_mean": 0.7275925828193202,
+      "cv_balanced_accuracy_mean": 0.6764585875911205
+    },
+    {
+      "model": "decision_tree",
+      "cv_pr_auc_mean": 0.6364394851028712,
+      "cv_pr_auc_std": 0.020798047428571824,
+      "cv_roc_auc_mean": 0.690794752119273,
+      "cv_balanced_accuracy_mean": 0.629092423392816
+    },
+    {
+      "model": "dummy_prevalence",
+      "cv_pr_auc_mean": 0.46024662360540225,
+      "cv_pr_auc_std": 0.003383408171670692,
+      "cv_roc_auc_mean": 0.5,
+      "cv_balanced_accuracy_mean": 0.5
+    }
+  ],
+  "selected_model": "logistic_regression",
+  "selected_threshold_from_training_oof": 0.25000000000000006,
+  "test_metrics": {
+    "roc_auc": 0.7297457627118644,
+    "pr_auc": 0.7065024351451681,
+    "balanced_accuracy": 0.5582203389830509,
+    "precision": 0.49206349206349204,
+    "recall_sensitivity": 0.93,
+    "specificity": 0.1864406779661017,
+    "f1": 0.643598615916955,
+    "brier_score": 0.21143282576061875,
+    "true_negatives": 22,
+    "false_positives": 96,
+    "false_negatives": 7,
+    "true_positives": 93
+  },
+  "top_permutation_features": [
+    {
+      "feature": "no_young_children",
+      "importance": 0.15723746400315283,
+      "importance_std": 0.012309953117634451
+    },
+    {
+      "feature": "foreign",
+      "importance": 0.10707216153950916,
+      "importance_std": 0.030511845936925318
+    },
+    {
+      "feature": "age",
+      "importance": 0.08246632219049746,
+      "importance_std": 0.018127616498124367
+    },
+    {
+      "feature": "Salary",
+      "importance": 0.03245823169839961,
+      "importance_std": 0.01701882265915967
+    },
+    {
+      "feature": "educ",
+      "importance": 0.006573812092036951,
+      "importance_std": 0.006057392181695302
+    },
+    {
+      "feature": "no_older_children",
+      "importance": 0.00019886544295927844,
+      "importance_std": 0.0009311040508322451
+    }
+  ],
+  "profile_by_observed_outcome": {
+    "0": {
+      "Salary": 43940.0,
+      "age": 40.854,
+      "educ": 9.594,
+      "no_young_children": 0.41,
+      "no_older_children": 0.902
+    },
+    "1": {
+      "Salary": 39809.0,
+      "age": 38.9,
+      "educ": 8.97,
+      "no_young_children": 0.197,
+      "no_older_children": 1.077
+    }
+  },
+  "decision_note": "Thresholds change contact volume and the precision-recall trade-off; business costs were unavailable, so the F1-optimal training threshold is illustrative rather than a profit optimum.",
+  "responsible_use": "Use only as an educational propensity analysis; real campaigns require consent, fairness review, frequency limits, and current validation."
+}

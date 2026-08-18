@@ -1,0 +1,15 @@
+column,dtype,missing_count,missing_percent,unique_values,constant
+ID,int64,0,0.0,62,False
+Gender,object,0,0.0,2,False
+Age,int64,0,0.0,8,False
+Class,object,0,0.0,3,False
+Major,object,0,0.0,8,False
+Grad Intention,object,0,0.0,3,False
+GPA,float64,0,0.0,16,False
+Employment,object,0,0.0,3,False
+Salary,float64,0,0.0,19,False
+Social Networking,int64,0,0.0,5,False
+Satisfaction,int64,0,0.0,6,False
+Spending,int64,0,0.0,22,False
+Computer,object,0,0.0,3,False
+Text Messages,int64,0,0.0,25,False

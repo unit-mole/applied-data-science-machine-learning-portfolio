@@ -1,0 +1,151 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "recordings": 195,
+    "participants": 32,
+    "features": 22,
+    "missing_cells": 0,
+    "positive_participants": 24
+  },
+  "validation": {
+    "train_participants": 24,
+    "held_out_participants": 8,
+    "same_participant_in_train_and_test": false,
+    "model_selection": "4-fold StratifiedGroupKFold on training participants",
+    "random_seed": 42
+  },
+  "candidate_models": [
+    {
+      "model": "gradient_boosting",
+      "participant_cv_roc_auc_mean": 0.78125,
+      "participant_cv_roc_auc_std": 0.1375,
+      "participant_cv_balanced_accuracy_mean": 0.6,
+      "participant_cv_recall_mean": 0.95
+    },
+    {
+      "model": "logistic_regression",
+      "participant_cv_roc_auc_mean": 0.5875,
+      "participant_cv_roc_auc_std": 0.42106016988865935,
+      "participant_cv_balanced_accuracy_mean": 0.575,
+      "participant_cv_recall_mean": 0.7749999999999999
+    },
+    {
+      "model": "random_forest",
+      "participant_cv_roc_auc_mean": 0.58125,
+      "participant_cv_roc_auc_std": 0.41501756990919475,
+      "participant_cv_balanced_accuracy_mean": 0.59375,
+      "participant_cv_recall_mean": 0.9375
+    },
+    {
+      "model": "support_vector_machine",
+      "participant_cv_roc_auc_mean": 0.5375,
+      "participant_cv_roc_auc_std": 0.4888336458687488,
+      "participant_cv_balanced_accuracy_mean": 0.59375,
+      "participant_cv_recall_mean": 0.9375
+    },
+    {
+      "model": "dummy_prevalence",
+      "participant_cv_roc_auc_mean": 0.5,
+      "participant_cv_roc_auc_std": 0.10206207261596575,
+      "participant_cv_balanced_accuracy_mean": 0.5,
+      "participant_cv_recall_mean": 1.0
+    }
+  ],
+  "selected_model": "gradient_boosting",
+  "recording_level_test_metrics": {
+    "roc_auc": 0.786036036036036,
+    "pr_auc": 0.8728948576985371,
+    "balanced_accuracy": 0.75,
+    "precision": 0.8604651162790697,
+    "recall_sensitivity": 1.0,
+    "specificity": 0.5,
+    "f1": 0.925,
+    "brier_score": 0.09366439064549982,
+    "true_negatives": 6,
+    "false_positives": 6,
+    "false_negatives": 0,
+    "true_positives": 37
+  },
+  "participant_level_test_metrics": {
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "balanced_accuracy": 0.75,
+    "precision": 0.8571428571428571,
+    "recall_sensitivity": 1.0,
+    "specificity": 0.5,
+    "f1": 0.9230769230769231,
+    "brier_score": 0.08970589471880189,
+    "true_negatives": 1,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "true_positives": 6
+  },
+  "participant_bootstrap_intervals": {
+    "participant_roc_auc_95_percent_bootstrap": [
+      1.0,
+      1.0
+    ],
+    "participant_balanced_accuracy_95_percent_bootstrap": [
+      0.5,
+      1.0
+    ],
+    "participant_recall_95_percent_bootstrap": [
+      1.0,
+      1.0
+    ]
+  },
+  "held_out_false_negative_participants": 0,
+  "top_permutation_features": [
+    {
+      "feature": "Jitter:DDP",
+      "importance": 0.0239864864864864,
+      "importance_std": 0.026556289019486267
+    },
+    {
+      "feature": "MDVP:RAP",
+      "importance": 0.02173423423423413,
+      "importance_std": 0.025682342662158155
+    },
+    {
+      "feature": "spread2",
+      "importance": 0.01768018018018009,
+      "importance_std": 0.014443857176851376
+    },
+    {
+      "feature": "PPE",
+      "importance": 0.012837837837837795,
+      "importance_std": 0.04994264627115001
+    },
+    {
+      "feature": "DFA",
+      "importance": 0.009346846846846746,
+      "importance_std": 0.005483436407180122
+    },
+    {
+      "feature": "MDVP:Fo(Hz)",
+      "importance": 0.003040540540540493,
+      "importance_std": 0.03670048327706416
+    },
+    {
+      "feature": "MDVP:APQ",
+      "importance": 0.0009009009009007974,
+      "importance_std": 0.0018018018018017752
+    },
+    {
+      "feature": "Shimmer:APQ5",
+      "importance": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "Shimmer:APQ3",
+      "importance": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "MDVP:Flo(Hz)",
+      "importance": 0.0,
+      "importance_std": 0.0
+    }
+  ],
+  "responsible_use": "Educational evaluation only\u2014not a diagnostic, screening, monitoring, or treatment system. The eight-person holdout and absent external validation preclude clinical use."
+}

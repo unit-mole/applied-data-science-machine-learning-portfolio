@@ -1,0 +1,11 @@
+column,dtype,missing_count,missing_percent,unique_values,constant
+Unnamed: 0,int64,0,0.0,1525,False
+vote,object,0,0.0,2,False
+age,int64,0,0.0,70,False
+economic.cond.national,int64,0,0.0,5,False
+economic.cond.household,int64,0,0.0,5,False
+Blair,int64,0,0.0,5,False
+Hague,int64,0,0.0,5,False
+Europe,int64,0,0.0,11,False
+political.knowledge,int64,0,0.0,4,False
+gender,object,0,0.0,2,False

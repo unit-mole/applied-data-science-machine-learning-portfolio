@@ -1,0 +1,78 @@
+start_date,end_date,category,start,stop,miles,purpose,duration_minutes,average_speed_mph,month,weekday,hour,daypart,route
+2016-03-25 16:52:00,2016-03-25 22:22:00,Business,Latta,Jacksonville,310.3,Customer Visit,330.0,56.41818181818182,2016-03,Friday,16,Afternoon,Latta → Jacksonville
+2016-03-25 22:54:00,2016-03-26 01:39:00,Business,Jacksonville,Kissimmee,201.0,Meeting,165.0,73.0909090909091,2016-03,Friday,22,Late night,Jacksonville → Kissimmee
+2016-10-30 15:22:00,2016-10-30 18:23:00,Business,Asheville,Mebane,195.9,Unknown,181.0,64.93922651933703,2016-10,Sunday,15,Afternoon,Asheville → Mebane
+2016-09-27 21:01:00,2016-09-28 02:37:00,Business,Unknown Location,Unknown Location,195.6,Unknown,336.0,34.92857142857143,2016-09,Tuesday,21,Late night,Unknown Location → Unknown Location
+2016-07-14 16:39:00,2016-07-14 20:05:00,Business,Morrisville,Banner Elk,195.3,Unknown,206.0,56.88349514563107,2016-07,Thursday,16,Afternoon,Morrisville → Banner Elk
+2016-07-17 12:20:00,2016-07-17 15:25:00,Personal,Boone,Cary,180.2,Commute,185.0,58.44324324324324,2016-07,Sunday,12,Afternoon,Boone → Cary
+2016-04-02 19:38:00,2016-04-02 22:36:00,Business,Jacksonville,Ridgeland,174.2,Customer Visit,178.0,58.7191011235955,2016-04,Saturday,19,Evening,Jacksonville → Ridgeland
+2016-04-03 02:00:00,2016-04-03 04:16:00,Business,Florence,Cary,159.3,Meeting,136.0,70.27941176470588,2016-04,Sunday,2,Overnight,Florence → Cary
+2016-08-27 16:15:00,2016-08-27 19:13:00,Business,Unknown Location,Unknown Location,156.9,Unknown,178.0,52.8876404494382,2016-08,Saturday,16,Afternoon,Unknown Location → Unknown Location
+2016-03-25 13:24:00,2016-03-25 16:22:00,Business,Cary,Latta,144.0,Customer Visit,178.0,48.53932584269663,2016-03,Friday,13,Afternoon,Cary → Latta
+2016-04-02 23:11:00,2016-04-03 01:34:00,Business,Ridgeland,Florence,144.0,Meeting,143.0,60.41958041958042,2016-04,Saturday,23,Late night,Ridgeland → Florence
+2016-03-17 12:52:00,2016-03-17 15:11:00,Business,Austin,Katy,136.0,Customer Visit,139.0,58.70503597122302,2016-03,Thursday,12,Afternoon,Austin → Katy
+2016-10-28 18:13:00,2016-10-28 20:07:00,Business,Winston Salem,Asheville,133.6,Meeting,114.0,70.3157894736842,2016-10,Friday,18,Evening,Winston Salem → Asheville
+2016-10-06 17:23:00,2016-10-06 17:40:00,Business,R?walpindi,Unknown Location,112.6,Unknown,17.0,397.4117647058823,2016-10,Thursday,17,Evening,R?walpindi → Unknown Location
+2016-10-28 15:53:00,2016-10-28 17:59:00,Business,Cary,Winston Salem,107.0,Meeting,126.0,50.95238095238095,2016-10,Friday,15,Afternoon,Cary → Winston Salem
+2016-12-21 20:56:00,2016-12-21 23:42:00,Business,Rawalpindi,Unknown Location,103.0,Meeting,166.0,37.2289156626506,2016-12,Wednesday,20,Evening,Rawalpindi → Unknown Location
+2016-08-24 13:01:00,2016-08-24 15:25:00,Business,Unknown Location,Unknown Location,96.2,Unknown,144.0,40.083333333333336,2016-08,Wednesday,13,Afternoon,Unknown Location → Unknown Location
+2016-10-28 20:13:00,2016-10-28 22:00:00,Business,Asheville,Topton,91.8,Meeting,107.0,51.47663551401869,2016-10,Friday,20,Evening,Asheville → Topton
+2016-08-27 14:01:00,2016-08-27 15:44:00,Business,Lahore,Unknown Location,86.6,Unknown,103.0,50.44660194174757,2016-08,Saturday,14,Afternoon,Lahore → Unknown Location
+2016-04-02 16:57:00,2016-04-02 18:09:00,Business,Daytona Beach,Jacksonville,80.5,Customer Visit,72.0,67.08333333333334,2016-04,Saturday,16,Afternoon,Daytona Beach → Jacksonville
+2016-04-02 12:21:00,2016-04-02 14:47:00,Business,Kissimmee,Daytona Beach,77.3,Customer Visit,146.0,31.767123287671236,2016-04,Saturday,12,Afternoon,Kissimmee → Daytona Beach
+2016-10-29 17:13:00,2016-10-29 19:19:00,Business,Hayesville,Topton,75.7,Unknown,126.0,36.047619047619044,2016-10,Saturday,17,Evening,Hayesville → Topton
+2016-09-06 17:49:00,2016-09-06 17:49:00,Business,Unknown Location,Unknown Location,69.1,Unknown,0.0,,2016-09,Tuesday,17,Evening,Unknown Location → Unknown Location
+2016-10-30 13:24:00,2016-10-30 14:37:00,Business,Bryson City,Asheville,68.4,Unknown,73.0,56.21917808219179,2016-10,Sunday,13,Afternoon,Bryson City → Asheville
+2016-01-06 14:42:00,2016-01-06 15:49:00,Business,Fort Pierce,West Palm Beach,63.7,Customer Visit,67.0,57.04477611940299,2016-01,Wednesday,14,Afternoon,Fort Pierce → West Palm Beach
+2016-03-19 19:33:00,2016-03-19 20:39:00,Business,Galveston,Houston,57.0,Customer Visit,66.0,51.81818181818181,2016-03,Saturday,19,Evening,Galveston → Houston
+2016-08-25 17:19:00,2016-08-25 19:20:00,Business,Unknown Location,Unknown Location,50.4,Unknown,121.0,24.99173553719008,2016-08,Thursday,17,Evening,Unknown Location → Unknown Location
+2016-12-31 22:08:00,2016-12-31 23:51:00,Business,Gampaha,Ilukwatta,48.2,Temporary Site,103.0,28.077669902912625,2016-12,Saturday,22,Late night,Gampaha → Ilukwatta
+2016-10-20 12:19:00,2016-10-20 13:17:00,Business,Berkeley,San Jose,47.7,Unknown,58.0,49.3448275862069,2016-10,Thursday,12,Afternoon,Berkeley → San Jose
+2016-06-27 07:37:00,2016-06-27 08:48:00,Business,New Orleans,Covington,46.9,Unknown,71.0,39.63380281690141,2016-06,Monday,7,Morning,New Orleans → Covington
+2016-11-11 09:35:00,2016-11-11 10:23:00,Business,Berkeley,Menlo Park,45.9,Customer Visit,48.0,57.37499999999999,2016-11,Friday,9,Morning,Berkeley → Menlo Park
+2016-10-30 18:26:00,2016-10-30 19:39:00,Business,Mebane,Cary,45.2,Unknown,73.0,37.15068493150685,2016-10,Sunday,18,Evening,Mebane → Cary
+2016-10-20 20:44:00,2016-10-20 21:37:00,Business,San Jose,Emeryville,44.6,Unknown,53.0,50.49056603773585,2016-10,Thursday,20,Evening,San Jose → Emeryville
+2016-11-14 11:24:00,2016-11-14 12:13:00,Business,Berkeley,Mountain View,44.6,Customer Visit,49.0,54.61224489795919,2016-11,Monday,11,Morning,Berkeley → Mountain View
+2016-11-06 16:27:00,2016-11-06 17:28:00,Business,Santa Clara,Berkeley,43.9,Customer Visit,61.0,43.18032786885246,2016-11,Sunday,16,Afternoon,Santa Clara → Berkeley
+2016-02-16 03:21:00,2016-02-16 04:13:00,Business,Katunayaka,Unknown Location,43.7,Customer Visit,52.0,50.42307692307693,2016-02,Tuesday,3,Overnight,Katunayaka → Unknown Location
+2016-11-14 13:40:00,2016-11-14 14:33:00,Business,Mountain View,Berkeley,43.6,Customer Visit,53.0,49.35849056603774,2016-11,Monday,13,Afternoon,Mountain View → Berkeley
+2016-07-16 15:29:00,2016-07-16 16:57:00,Personal,Newland,Boone,41.9,Unknown,88.0,28.56818181818182,2016-07,Saturday,15,Afternoon,Newland → Boone
+2016-10-29 15:22:00,2016-10-29 17:05:00,Business,Topton,Hayesville,40.7,Meeting,103.0,23.708737864077673,2016-10,Saturday,15,Afternoon,Topton → Hayesville
+2016-01-20 13:25:00,2016-01-20 14:19:00,Business,Raleigh,Cary,40.2,Customer Visit,54.0,44.66666666666667,2016-01,Wednesday,13,Afternoon,Raleigh → Cary
+2016-11-20 10:27:00,2016-11-20 11:32:00,Business,Cary,Cary,39.2,Between Offices,65.0,36.18461538461539,2016-11,Sunday,10,Morning,Cary → Cary
+2016-09-30 17:39:00,2016-09-30 20:20:00,Business,Islamabad,Islamabad,37.7,Unknown,161.0,14.049689440993792,2016-09,Friday,17,Evening,Islamabad → Islamabad
+2016-11-11 14:39:00,2016-11-11 15:46:00,Business,Menlo Park,Berkeley,36.6,Customer Visit,67.0,32.776119402985074,2016-11,Friday,14,Afternoon,Menlo Park → Berkeley
+2016-03-19 15:34:00,2016-03-19 16:38:00,Business,Houston,Galveston,36.5,Meal/Entertain,64.0,34.21875,2016-03,Saturday,15,Afternoon,Houston → Galveston
+2016-03-19 14:01:00,2016-03-19 14:57:00,Business,Sugar Land,Houston,35.1,Customer Visit,56.0,37.60714285714286,2016-03,Saturday,14,Afternoon,Sugar Land → Houston
+2016-08-25 15:17:00,2016-08-25 16:22:00,Business,Unknown Location,Unknown Location,35.0,Unknown,65.0,32.30769230769231,2016-08,Thursday,15,Afternoon,Unknown Location → Unknown Location
+2016-10-07 10:56:00,2016-10-07 10:59:00,Business,Unknown Location,Lahore,33.2,Unknown,3.0,664.0,2016-10,Friday,10,Morning,Unknown Location → Lahore
+2016-04-28 13:30:00,2016-04-28 13:49:00,Business,Raleigh,Cary,32.8,Customer Visit,19.0,103.57894736842105,2016-04,Thursday,13,Afternoon,Raleigh → Cary
+2016-12-22 15:40:00,2016-12-22 16:38:00,Business,Unknown Location,Unknown Location,32.3,Meeting,58.0,33.41379310344827,2016-12,Thursday,15,Afternoon,Unknown Location → Unknown Location
+2016-08-11 20:59:00,2016-08-11 21:44:00,Business,Wake Forest,Cary,31.9,Unknown,45.0,42.53333333333333,2016-08,Thursday,20,Evening,Wake Forest → Cary
+2016-08-11 18:37:00,2016-08-11 19:29:00,Business,Cary,Wake Forest,31.7,Unknown,52.0,36.57692307692307,2016-08,Thursday,18,Evening,Cary → Wake Forest
+2016-03-17 15:16:00,2016-03-17 15:58:00,Business,Katy,Houston,30.2,Meeting,42.0,43.142857142857146,2016-03,Thursday,15,Afternoon,Katy → Houston
+2016-06-27 12:22:00,2016-06-27 13:02:00,Business,Mandeville,Metairie,30.0,Unknown,40.0,45.0,2016-06,Monday,12,Afternoon,Mandeville → Metairie
+2016-10-30 07:49:00,2016-10-30 08:30:00,Business,Topton,Bryson City,29.8,Unknown,41.0,43.609756097560975,2016-10,Sunday,7,Morning,Topton → Bryson City
+2016-03-30 22:05:00,2016-03-30 22:55:00,Business,Orlando,Kissimmee,28.8,Meal/Entertain,50.0,34.56,2016-03,Wednesday,22,Late night,Orlando → Kissimmee
+2016-10-04 09:50:00,2016-10-04 10:52:00,Business,Unknown Location,Unknown Location,28.6,Unknown,62.0,27.677419354838708,2016-10,Tuesday,9,Morning,Unknown Location → Unknown Location
+2016-10-23 12:17:00,2016-10-23 12:59:00,Business,Raleigh,Cary,28.2,Unknown,42.0,40.285714285714285,2016-10,Sunday,12,Afternoon,Raleigh → Cary
+2016-10-23 09:24:00,2016-10-23 10:05:00,Business,Cary,Raleigh,28.1,Unknown,41.0,41.1219512195122,2016-10,Sunday,9,Morning,Cary → Raleigh
+2016-07-16 13:14:00,2016-07-16 14:10:00,Personal,Banner Elk,Newland,28.1,Unknown,56.0,30.107142857142858,2016-07,Saturday,13,Afternoon,Banner Elk → Newland
+2016-03-28 19:30:00,2016-03-28 20:23:00,Personal,Couples Glen,Vista East,27.2,Unknown,53.0,30.79245283018868,2016-03,Monday,19,Evening,Couples Glen → Vista East
+2016-08-15 19:08:00,2016-08-15 20:30:00,Business,Unknown Location,Unknown Location,25.9,Temporary Site,82.0,18.95121951219512,2016-08,Monday,19,Evening,Unknown Location → Unknown Location
+2016-03-28 22:55:00,2016-03-28 23:26:00,Personal,Orlando,Kissimmee,25.7,Unknown,31.0,49.74193548387096,2016-03,Monday,22,Late night,Orlando → Kissimmee
+2016-05-11 08:35:00,2016-05-11 09:12:00,Business,Newark,San Francisco,25.6,Meeting,37.0,41.513513513513516,2016-05,Wednesday,8,Morning,Newark → San Francisco
+2016-03-21 20:18:00,2016-03-21 20:55:00,Business,Sharpstown,Midtown,25.6,Meal/Entertain,37.0,41.513513513513516,2016-03,Monday,20,Evening,Sharpstown → Midtown
+2016-08-24 12:05:00,2016-08-24 12:56:00,Business,Unknown Location,Unknown Location,25.2,Unknown,51.0,29.647058823529413,2016-08,Wednesday,12,Afternoon,Unknown Location → Unknown Location
+2016-07-16 19:42:00,2016-07-16 20:35:00,Personal,Boone,Banner Elk,23.8,Unknown,53.0,26.943396226415096,2016-07,Saturday,19,Evening,Boone → Banner Elk
+2016-02-18 08:19:00,2016-02-18 08:27:00,Business,Unknown Location,Unknown Location,23.5,Temporary Site,8.0,176.25,2016-02,Thursday,8,Morning,Unknown Location → Unknown Location
+2016-07-13 12:39:00,2016-07-13 13:20:00,Personal,Cary,Morrisville,23.5,Unknown,41.0,34.390243902439025,2016-07,Wednesday,12,Afternoon,Cary → Morrisville
+2016-02-01 12:10:00,2016-02-01 12:43:00,Business,Chapel Hill,Cary,23.3,Customer Visit,33.0,42.36363636363636,2016-02,Monday,12,Afternoon,Chapel Hill → Cary
+2016-12-22 17:56:00,2016-12-22 18:29:00,Business,Unknown Location,Unknown Location,23.2,Meeting,33.0,42.18181818181818,2016-12,Thursday,17,Evening,Unknown Location → Unknown Location
+2016-02-20 14:50:00,2016-02-20 15:54:00,Business,R?walpindi,R?walpindi,23.1,Meeting,64.0,21.65625,2016-02,Saturday,14,Afternoon,R?walpindi → R?walpindi
+2016-03-22 06:17:00,2016-03-22 06:43:00,Business,Midtown,Greater Greenspoint,23.0,Meal/Entertain,26.0,53.07692307692307,2016-03,Tuesday,6,Morning,Midtown → Greater Greenspoint
+2016-02-21 13:33:00,2016-02-21 14:30:00,Business,Unknown Location,Unknown Location,22.7,Temporary Site,57.0,23.894736842105264,2016-02,Sunday,13,Afternoon,Unknown Location → Unknown Location
+2016-04-22 10:10:00,2016-04-22 10:40:00,Business,Raleigh,Cary,22.5,Meeting,30.0,45.0,2016-04,Friday,10,Morning,Raleigh → Cary
+2016-07-15 12:35:00,2016-07-15 13:15:00,Personal,Banner Elk,Elk Park,22.4,Unknown,40.0,33.6,2016-07,Friday,12,Afternoon,Banner Elk → Elk Park
+2016-06-08 12:04:00,2016-06-08 13:01:00,Business,Jamaica,New York,22.3,Errand/Supplies,57.0,23.47368421052632,2016-06,Wednesday,12,Afternoon,Jamaica → New York
+2016-01-14 16:29:00,2016-01-14 17:05:00,Business,Houston,Houston,21.9,Customer Visit,36.0,36.5,2016-01,Thursday,16,Afternoon,Houston → Houston

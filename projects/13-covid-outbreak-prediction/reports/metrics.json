@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "data_quality": {
+    "source_rows": 19496,
+    "source_locations": 212,
+    "source_date_min": "2019-12-31",
+    "source_date_max": "2020-05-24",
+    "negative_case_revision_rows_excluded": 9,
+    "modeling_rows": 17807,
+    "modeled_locations": 210
+  },
+  "forecast_definition": {
+    "target": "reported new cases for the current row using only prior-day and earlier features",
+    "horizon": "one day ahead",
+    "historical_cutoff": "2020-05-24"
+  },
+  "validation": {
+    "selection": "three rolling-origin 14-day windows",
+    "final_holdout_start": "2020-05-11",
+    "final_holdout_end": "2020-05-24",
+    "final_train_rows": 14890,
+    "final_test_rows": 2917,
+    "random_seed": 42
+  },
+  "candidate_models": [
+    {
+      "model": "rolling_7_baseline",
+      "mean_rmse": 499.84998116847765,
+      "std_rmse": 87.22307930173316,
+      "mean_mae": 89.88676956738311,
+      "mean_r_squared": 0.9465218186999413
+    },
+    {
+      "model": "last_value",
+      "mean_rmse": 570.8420891131221,
+      "std_rmse": 177.5552135571868,
+      "mean_mae": 88.21418367429078,
+      "mean_r_squared": 0.925867610075656
+    },
+    {
+      "model": "hist_gradient_boosting_lags",
+      "mean_rmse": 935.4031388930925,
+      "std_rmse": 497.0915069316782,
+      "mean_mae": 125.04632356914742,
+      "mean_r_squared": 0.787516006959875
+    },
+    {
+      "model": "ridge_country_lags",
+      "mean_rmse": 22177568938844.574,
+      "std_rmse": 38412675098825.97,
+      "mean_mae": 663354371151.7607,
+      "mean_r_squared": -2.9341939203239553e+20
+    }
+  ],
+  "selected_model": "rolling_7_baseline",
+  "final_test_metrics": {
+    "mae": 85.42675939076351,
+    "rmse": 388.15380652460067,
+    "r_squared": 0.9637137809610788,
+    "mape_percent": 66.27981701193191
+  },
+  "diagnostic_90_percent_interval": {
+    "absolute_error_radius_from_validation": 142.28571428571433,
+    "final_test_coverage": 0.8961261570106274
+  },
+  "highest_volume_country_errors": [
+    {
+      "location": "United States",
+      "rows": 14,
+      "actual_cases": 313129,
+      "mae": 2668.744897959183
+    },
+    {
+      "location": "Brazil",
+      "rows": 14,
+      "actual_cases": 191459,
+      "mae": 3521.326530612245
+    },
+    {
+      "location": "Russia",
+      "rows": 14,
+      "actual_cases": 137206,
+      "mae": 711.8163265306124
+    },
+    {
+      "location": "India",
+      "rows": 14,
+      "actual_cases": 68929,
+      "mae": 805.1428571428571
+    },
+    {
+      "location": "Peru",
+      "rows": 14,
+      "actual_cases": 50739,
+      "mae": 817.4183673469387
+    },
+    {
+      "location": "United Kingdom",
+      "rows": 12,
+      "actual_cases": 39460,
+      "mae": 633.4285714285714
+    },
+    {
+      "location": "Chile",
+      "rows": 14,
+      "actual_cases": 38174,
+      "mae": 714.8775510204081
+    },
+    {
+      "location": "Saudi Arabia",
+      "rows": 14,
+      "actual_cases": 33025,
+      "mae": 277.9897959183673
+    },
+    {
+      "location": "Mexico",
+      "rows": 14,
+      "actual_cases": 32396,
+      "mae": 380.43877551020404
+    },
+    {
+      "location": "Iran",
+      "rows": 14,
+      "actual_cases": 27301,
+      "mae": 245.29591836734693
+    },
+    {
+      "location": "Pakistan",
+      "rows": 14,
+      "actual_cases": 25136,
+      "mae": 331.4081632653061
+    },
+    {
+      "location": "Qatar",
+      "rows": 14,
+      "actual_cases": 20882,
+      "mae": 217.68367346938774
+    }
+  ],
+  "responsible_use": "Historical educational analysis only. Early-pandemic reporting revisions, testing changes, policy shifts, and short coverage make it unsuitable for current forecasting, policy, or medical decisions."
+}

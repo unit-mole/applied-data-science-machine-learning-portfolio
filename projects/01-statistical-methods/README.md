@@ -93,6 +93,12 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
+## Validation Strategy
+
+```json
+{}
+```
+
 ---
 
 ## Model and Analytical Results
@@ -179,6 +185,8 @@ Expected project runtime is hardware-dependent; the root reproducibility report 
 └── README.md
 ```
 
+---
+
 ## Limitations
 
 The survey and shingle collection designs are undocumented; inferential results apply only under independence and sampling assumptions that cannot be fully verified.
@@ -202,7 +210,6 @@ Python 3.12/3.13 · pandas · NumPy · SciPy · scikit-learn · Matplotlib · Op
 ## Portfolio Positioning
 
 I rebuilt this as a statistical inference case study. I began with provenance and data-quality risks, defined a baseline and validation design appropriate to the unit of observation, compared only justified methods, and accepted the result shown above even where a simpler baseline won. I then connected diagnostics and uncertainty to a specific stakeholder decision and documented where the evidence must not be used.
-
 
 ---
 

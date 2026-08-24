@@ -93,6 +93,14 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
+## Validation Strategy
+
+```json
+{}
+```
+
+---
+
 ## Model and Analytical Results
 
 > The cleaned year contains 69,982 bills and 32,654,640 recorded revenue units; two stable menu-item groups score 0.395 silhouette.

@@ -93,6 +93,20 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
+## Validation Strategy
+
+```json
+{
+  "training_rows": 21573,
+  "untouched_test_rows": 5394,
+  "model_selection": "4-fold shuffled CV on training only",
+  "calibration_rows_for_interval": 4315,
+  "random_seed": 42
+}
+```
+
+---
+
 ## Model and Analytical Results
 
 > Histogram gradient boosting reaches untouched-test R² 0.981, RMSE 563, and 90.6% coverage for the training-calibrated 90% diagnostic interval.

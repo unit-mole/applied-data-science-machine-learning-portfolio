@@ -93,6 +93,21 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
+## Validation Strategy
+
+```json
+{
+  "train_rows": 2145,
+  "untouched_test_rows": 716,
+  "test_fraction": 0.25,
+  "selection_cv": "4-fold stratified CV on training data only",
+  "optimization_metric": "average precision (PR-AUC)",
+  "random_seed": 42
+}
+```
+
+---
+
 ## Model and Analytical Results
 
 > The tuned random forest selected by training PR-AUC reaches untouched-test ROC-AUC 0.799, PR-AUC 0.613, and balanced accuracy 0.713.

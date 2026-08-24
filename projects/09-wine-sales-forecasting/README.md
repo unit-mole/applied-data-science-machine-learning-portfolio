@@ -93,6 +93,18 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
+## Validation Strategy
+
+```json
+{
+  "model_selection": "three rolling-origin 12-month validation windows",
+  "final_holdout": "last 24 months, untouched during selection",
+  "missing_rose_values": "linear interpolation within the series; neither missing record is in the final holdout"
+}
+```
+
+---
+
 ## Model and Analytical Results
 
 > Rolling-origin selection chooses trend plus month for Rose (holdout RMSE 13.6) and additive Holt-Winters for Sparkling (RMSE 358.7).

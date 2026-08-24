@@ -93,6 +93,20 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
+## Validation Strategy
+
+```json
+{
+  "train_rows": 654,
+  "untouched_test_rows": 218,
+  "selection": "5-fold stratified CV on training data",
+  "selection_metric": "PR-AUC",
+  "random_seed": 42
+}
+```
+
+---
+
 ## Model and Analytical Results
 
 > Calibrated logistic regression reaches untouched-test ROC-AUC 0.730 and PR-AUC 0.707; the high-recall training threshold produces 93.0% recall with low specificity.

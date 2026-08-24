@@ -93,6 +93,20 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
+## Validation Strategy
+
+```json
+{
+  "train_participants": 24,
+  "held_out_participants": 8,
+  "same_participant_in_train_and_test": false,
+  "model_selection": "4-fold StratifiedGroupKFold on training participants",
+  "random_seed": 42
+}
+```
+
+---
+
 ## Model and Analytical Results
 
 > With no participant overlap, the eight-person holdout has balanced accuracy 0.750, sensitivity 1.000, and specificity 0.500; uncertainty is necessarily wide.
@@ -197,7 +211,7 @@ Python 3.12/3.13 · pandas · NumPy · SciPy · scikit-learn · Matplotlib · Op
 
 ---
 
-### Interview-ready explanation
+## Portfolio Positioning
 
 I rebuilt this as a grouped high-stakes classification case study. I began with provenance and data-quality risks, defined a baseline and validation design appropriate to the unit of observation, compared only justified methods, and accepted the result shown above even where a simpler baseline won. I then connected diagnostics and uncertainty to a specific stakeholder decision and documented where the evidence must not be used.
 

@@ -661,11 +661,15 @@ This portfolio connects directly to a Quality Data Scientist background because 
 
 ---
 
-## License
+## License and Third-Party Materials
 
-This repository is distributed under the [MIT License](LICENSE).
+The original source code and original documentation in this repository are licensed under the [MIT License](LICENSE).
 
-Individual datasets, models, and third-party libraries remain subject to their original licenses, source terms, and usage conditions. Dataset-specific provenance and limitations are documented inside each project's `data/README.md`.
+Datasets, pretrained models, model weights, images, reference materials, and other third-party assets used by the portfolio projects are not relicensed by this repository. They remain subject to the licenses, terms of use, attribution requirements, and usage restrictions established by their respective owners.
+
+Dataset provenance, source information, and relevant limitations are documented in each project's `data/README.md` and supporting project documentation. Before reusing any dataset, model, or external asset, review its original source and applicable license or provider terms. Inclusion in this portfolio does not transfer ownership or grant additional usage rights beyond those provided by the original owner.
+
+Unless explicitly stated otherwise, trained models, analytical outputs, reports, and generated artifacts in this portfolio are provided for educational, research, and portfolio-demonstration purposes. They are not guaranteed to be suitable for production, medical, financial, safety-critical, or other high-risk applications.
 
 ---
 

@@ -130,7 +130,7 @@ Acquire current, licensed, externally representative data; pre-register the prim
 
 “I rebuilt this as a statistical inference case study. I began with provenance and data-quality risks, defined a baseline and validation design appropriate to the unit of observation, compared only justified methods, and accepted the result shown above even where a simpler baseline won. I then connected diagnostics and uncertainty to a specific stakeholder decision and documented where the evidence must not be used.”
 
-## Résumé bullets
+## Resume bullets
 
 - Re-engineered a business statistics and quality analysis into a reproducible statistical inference workflow with automated data-quality evidence, saved outputs, and a fully executed recruiter-facing notebook.
 - Implemented descriptive statistics and problem-appropriate validation to produce the verified result: Shingle B is below the 0.35 limit by both t and Wilcoxon tests (t-test p=0.0021); Shingle A is not below the limit by the prespecified t-test (p=0.075).

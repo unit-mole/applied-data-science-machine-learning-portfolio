@@ -93,12 +93,6 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
-## Validation Strategy
-
-```json
-{}
-```
-
 ---
 
 ## Model and Analytical Results

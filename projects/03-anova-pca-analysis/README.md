@@ -93,6 +93,14 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
+## Validation Strategy
+
+```json
+{}
+```
+
+---
+
 ## Model and Analytical Results
 
 > Education shows a large observed salary association (eta²=0.626); 6 standardized components retain at least 80% of college-indicator variance.

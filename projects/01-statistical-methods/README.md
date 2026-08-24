@@ -179,8 +179,6 @@ Expected project runtime is hardware-dependent; the root reproducibility report 
 └── README.md
 ```
 
----
-
 ## Limitations
 
 The survey and shingle collection designs are undocumented; inferential results apply only under independence and sampling assumptions that cannot be fully verified.

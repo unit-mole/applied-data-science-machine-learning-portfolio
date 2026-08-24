@@ -1,10 +1,19 @@
 # Retrospective Election Survey Classification
 
+[![Python](https://img.shields.io/badge/Python-3.12%20%7C%203.13-blue.svg)](https://www.python.org/)
+[![pandas](https://img.shields.io/badge/pandas-Data%20Analysis-150458.svg)](https://pandas.pydata.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-Modeling-f7931e.svg)](https://scikit-learn.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Executed%20Notebook-f37626.svg)](notebooks/01_end_to_end_analysis.ipynb)
+[![Status](https://img.shields.io/badge/Status-Executed%20%26%20Validated-2ea44f.svg)](../../REPRODUCIBILITY_REPORT.md)
+[![License](https://img.shields.io/badge/Code%20License-MIT-green.svg)](../../LICENSE)
+
 > **Value proposition:** Evaluate respondent-level party classification while explicitly separating it from representative polling or forecasting.
 
-![Python](https://img.shields.io/badge/Python-3.12%20%7C%203.13-blue.svg) ![Status](https://img.shields.io/badge/Status-Executed%20%26%20Validated-2ea44f.svg) ![Notebook](https://img.shields.io/badge/Notebook-Executed-F37626.svg)
 
-## Executive summary
+
+---
+
+## Project Overview
 
 **Business question.** Evaluate respondent-level party classification while explicitly separating it from representative polling or forecasting.  
 **Dataset.** 1,525 historical survey rows with vote, age, leader ratings, economic assessments, Europe attitudes, knowledge, and gender.  
@@ -16,11 +25,25 @@
 
 [Open the executed notebook](notebooks/01_end_to_end_analysis.ipynb) · [Inspect source code](src/analysis.py) · [Inspect metrics](reports/metrics.json) · [Original project](<https://github.com/unit-mole/Election_Exit_Poll_Prediction_using_ML_Models>)
 
-## Business problem
+---
+
+## Responsible Use
+
+See the executed metrics for project-specific limitations.
+
+The undocumented sampling and weighting design prevents representative election inference or future-election claims.
+
+This project is intended for education, analytical demonstration, and portfolio presentation. Its outputs should be reviewed by qualified domain experts before they influence operational, financial, medical, quality, or other consequential decisions.
+
+---
+
+## Business Problem
 
 The intended user is **A survey-methodology analyst**. The analysis supports this decision: **Understand classification signal and uncertainty without making live-election claims.** It does not claim causality or production readiness unless the study design supports that claim.
 
-## Analytical questions and success criteria
+---
+
+## Project Objective
 
 1. What data-quality issues materially affect the analysis?
 2. Which baseline establishes the minimum useful performance or descriptive reference?
@@ -30,7 +53,23 @@ The intended user is **A survey-methodology analyst**. The analysis supports thi
 
 Technical success requires a fully executed pipeline, correct split logic, task-appropriate metrics, saved evidence, deterministic seeds where supported, and zero notebook errors. Business success requires an interpretable result that changes a defensible analytical decision without fabricating financial impact.
 
-## Dataset and provenance
+---
+
+## Project Pattern
+
+This project follows a reproducible applied-data-science pattern:
+
+1. establish dataset provenance and data-quality constraints;
+2. define the analytical question and minimum useful baseline;
+3. select a validation strategy that respects the unit of observation;
+4. compare justified statistical or machine-learning methods;
+5. preserve results, diagnostics, and reproducibility evidence;
+6. translate the findings into a bounded business recommendation;
+7. document limitations, licensing, and responsible-use conditions.
+
+---
+
+## Dataset
 
 1,525 historical survey rows with vote, age, leader ratings, economic assessments, Europe attitudes, knowledge, and gender.
 
@@ -38,25 +77,23 @@ Bundled in the original repository; survey organization, weighting, sampling des
 
 The exact local files, row counts, data types, missingness, cardinality, and checksums are exposed in the notebook and `reports/tables/*data_quality.csv`. Dataset terms must be reviewed separately from the repository's MIT code license.
 
-## Methodology
+---
+
+## Tools and Technologies
+
+Python 3.12/3.13 · pandas · NumPy · SciPy · scikit-learn · Matplotlib · OpenPyXL · Jupyter · data-quality engineering · Historical binary classification · reproducibility · responsible interpretation.
+
+---
+
+## End-to-End Project Workflow
 
 Stratified CV, dummy/logistic/LDA/KNN/SVM/random-forest comparison, probability calibration, untouched test evaluation, permutation importance, and age/gender sensitivity tables.
 
 Reusable logic lives in `src/analysis.py`; the notebook imports and executes that same implementation. Preprocessing is fitted only inside training folds where a supervised model is used. Grouped and chronological projects keep entity and time boundaries intact.
 
-## Validation strategy
+---
 
-```json
-{
-  "training_rows": 1143,
-  "untouched_test_rows": 382,
-  "selection": "5-fold stratified CV on training only",
-  "selection_metric": "ROC-AUC",
-  "random_seed": 42
-}
-```
-
-## Verified result
+## Model and Analytical Results
 
 > The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling.
 
@@ -73,7 +110,9 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 All values above are generated from the committed data and synchronized with `reports/metrics.json` after execution.
 
-## Explainability, diagnostics, and robustness
+---
+
+## Evaluation, Explainability, and Robustness
 
 - The project saves its comparison and diagnostic tables under `reports/tables/`.
 - The primary figure combines model/statistical evidence with error, stability, calibration, or profile evidence appropriate to the task.
@@ -82,7 +121,9 @@ All values above are generated from the committed data and synchronized with `re
 - Clustering projects report internal metrics as descriptive evidence—not proof of objectively real groups.
 - Time-series projects use chronological origins and transparent baselines.
 
-## Business recommendations
+---
+
+## Business Recommendations
 
 | Priority | Recommendation | Evidence | Expected benefit | Risk or limitation | How to measure success |
 |---:|---|---|---|---|---|
@@ -90,13 +131,37 @@ All values above are generated from the committed data and synchronized with `re
 | 2 | Review the largest error, uncertainty, or sensitivity segment before deployment. | See saved diagnostic tables | Reduces hidden failure risk | Small subgroups can produce unstable estimates | Track subgroup error and interval coverage |
 | 3 | Keep a transparent baseline in future monitoring. | Baseline comparison is recorded in the notebook | Detects when complexity stops adding value | Baselines do not capture every business driver | Compare every refresh against the same baseline |
 
-## Limitations and responsible use
+---
 
-See the executed metrics for project-specific limitations.
+## Model and Evaluation Artifacts
 
-The undocumented sampling and weighting design prevents representative election inference or future-election claims.
+The committed project preserves its analytical evidence through:
 
-## Repository structure
+- the fully executed notebook under `notebooks/`;
+- reusable analytical logic under `src/`;
+- synchronized metrics in `reports/metrics.json`;
+- comparison and diagnostic tables under `reports/tables/`;
+- recruiter-facing figures under `reports/figures/`;
+- fitted artifacts under `models/` when a saved model is appropriate;
+- project-level provenance documentation under `data/README.md`.
+
+---
+
+## Run the Project Locally
+
+From the portfolio root:
+
+```bash
+python projects/07-election-exit-poll-prediction/src/analysis.py
+python scripts/execute_notebooks.py --project 07-election-exit-poll-prediction
+python validate_portfolio.py
+```
+
+Expected project runtime is hardware-dependent; the root reproducibility report records the measured portfolio run. Outputs are written under `projects/07-election-exit-poll-prediction/reports/` and, for selected predictive models, `projects/07-election-exit-poll-prediction/models/`.
+
+---
+
+## Project Structure
 
 ```text
 07-election-exit-poll-prediction/
@@ -111,32 +176,47 @@ The undocumented sampling and weighting design prevents representative election 
 └── README.md
 ```
 
-## Run locally
+---
 
-From the portfolio root:
+## Limitations
 
-```bash
-python projects/07-election-exit-poll-prediction/src/analysis.py
-python scripts/execute_notebooks.py --project 07-election-exit-poll-prediction
-python validate_portfolio.py
-```
+See the executed metrics for project-specific limitations.
 
-Expected project runtime is hardware-dependent; the root reproducibility report records the measured portfolio run. Outputs are written under `projects/07-election-exit-poll-prediction/reports/` and, for selected predictive models, `projects/07-election-exit-poll-prediction/models/`.
+The undocumented sampling and weighting design prevents representative election inference or future-election claims.
 
-## Technologies and skills demonstrated
+---
 
-Python 3.12/3.13 · pandas · NumPy · SciPy · scikit-learn · Matplotlib · OpenPyXL · Jupyter · data-quality engineering · Historical binary classification · reproducibility · responsible interpretation.
-
-## Future work
+## Future Improvements
 
 Acquire current, licensed, externally representative data; pre-register the primary metric and validation design; add domain-reviewed cost assumptions; and test the final approach prospectively before any operational use.
 
-## Interview-ready explanation
+---
 
-“I rebuilt this as a historical binary classification case study. I began with provenance and data-quality risks, defined a baseline and validation design appropriate to the unit of observation, compared only justified methods, and accepted the result shown above even where a simpler baseline won. I then connected diagnostics and uncertainty to a specific stakeholder decision and documented where the evidence must not be used.”
+## Skills Demonstrated
 
-## Résumé bullets
+Python 3.12/3.13 · pandas · NumPy · SciPy · scikit-learn · Matplotlib · OpenPyXL · Jupyter · data-quality engineering · Historical binary classification · reproducibility · responsible interpretation.
 
-- Re-engineered a political survey research analysis into a reproducible historical binary classification workflow with automated data-quality evidence, saved outputs, and a fully executed recruiter-facing notebook.
-- Implemented stratified cv and problem-appropriate validation to produce the verified result: The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling.
-- Translated model/statistical diagnostics into prioritized recommendations while documenting provenance, uncertainty, and responsible-use limits.
+---
+
+## Portfolio Positioning
+
+I rebuilt this as a historical binary classification case study. I began with provenance and data-quality risks, defined a baseline and validation design appropriate to the unit of observation, compared only justified methods, and accepted the result shown above even where a simpler baseline won. I then connected diagnostics and uncertainty to a specific stakeholder decision and documented where the evidence must not be used.
+
+---
+
+## Data and Third-Party Materials
+
+The original source code and original documentation created for this project are licensed under the portfolio's [MIT License](../../LICENSE).
+
+The datasets, pretrained models, model weights, images, reference materials, and other third-party assets used by this project are **not** relicensed under the MIT License. They remain subject to the licenses, source terms, attribution requirements, and usage restrictions established by their respective owners.
+
+Dataset provenance and known reuse limitations are documented in the [project data documentation](data/README.md) and in the Dataset section above. Where the upstream collection process or redistribution terms are undocumented, users must not assume that the material is cleared for unrestricted reuse. Review the original provider's terms before copying, redistributing, or using any third-party material outside this portfolio.
+
+Unless explicitly stated otherwise, trained models, analytical outputs, reports, and generated artifacts are provided for educational, research, and portfolio-demonstration purposes. They are not guaranteed to be suitable for production, medical, financial, safety-critical, or other high-risk applications.
+
+---
+
+## Author
+
+**Anmol Tripathi**  
+Quality Data Scientist | Data Science | Machine Learning | Applied AI | Statistical Analysis | Predictive Analytics | Analytics Engineering | Quality Analytics

@@ -209,9 +209,7 @@ Python 3.12/3.13 · pandas · NumPy · SciPy · scikit-learn · Matplotlib · Op
 
 ## Portfolio Positioning
 
-### Interview-ready explanation
-
-“I rebuilt this as a statistical inference case study. I began with provenance and data-quality risks, defined a baseline and validation design appropriate to the unit of observation, compared only justified methods, and accepted the result shown above even where a simpler baseline won. I then connected diagnostics and uncertainty to a specific stakeholder decision and documented where the evidence must not be used.”
+I rebuilt this as a statistical inference case study. I began with provenance and data-quality risks, defined a baseline and validation design appropriate to the unit of observation, compared only justified methods, and accepted the result shown above even where a simpler baseline won. I then connected diagnostics and uncertainty to a specific stakeholder decision and documented where the evidence must not be used.
 
 
 ---

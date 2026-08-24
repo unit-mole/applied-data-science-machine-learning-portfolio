@@ -93,6 +93,20 @@ Reusable logic lives in `src/analysis.py`; the notebook imports and executes tha
 
 ---
 
+## Validation Strategy
+
+```json
+{
+  "training_rows": 1143,
+  "untouched_test_rows": 382,
+  "selection": "5-fold stratified CV on training only",
+  "selection_metric": "ROC-AUC",
+  "random_seed": 42
+}
+```
+
+---
+
 ## Model and Analytical Results
 
 > The calibrated random forest reaches retrospective test ROC-AUC 0.909 and balanced accuracy 0.806; this is respondent classification, not polling.
